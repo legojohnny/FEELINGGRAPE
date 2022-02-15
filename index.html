@@ -2,21 +2,32 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>FeelingGrape</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
-
 	<style type="text/css">
+	
+
 	</style>
-
-
-		<!-- [if lt IE9]
+	<!-- [if lt IE9]
 		<script src="js/html5shiv.js"></script>
-		<![endif] -->
+	<![endif]-->
+	<script type="text/javascript">
+	window.onload = function(){
 
+		var elm_header = document.querySelector('header');
+		var btn_menu = document.querySelector('.btn_menu');
+
+		btn_menu.addEventListener('click', function(){
+			elm_header.classList.toggle('on'); 
+		});
+
+}
+
+	</script>
 
 </head>
 	
@@ -70,7 +81,7 @@
 			--><li>
 					<button class="btn_sub"><span>INFORMATION</span></button>
 					<ul>
-						<li><a href="#">NOTICE</a></li>
+						<li><a href="sub/notice.html" style="font-weight: bold">NOTICE</a></li>
 						<li><a href="#">CUSTOMER SERVICE</a></li>
 						<li><a href="#">BRAND STORY</a></li>
 						<li><a href="#">OFFLINE STORE</a></li>
