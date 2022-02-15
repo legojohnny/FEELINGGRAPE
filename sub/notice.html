@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/notice.css" type="text/css">
+
+	<style type="text/css">
+
+	</style>
+
+
+		<!-- [if lt IE9]
+		<script src="js/html5shiv.js"></script>
+		<![endif] -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+	
+<body>
+
+	<header> 
+		<h1><a href="index.html"><span class="blind">FeelingGrape Logo</span></a></h1>
+		<button class="btn_menu"><span class="blind">menu</span></button>
+
+		<nav>
+			<div class="utility">
+				<div class="lang_wrap">
+					<div class="select_lang"><span class="select_value">English</span><button class="btn_expand"><span class="blind">country change</span></button>
+					</div>
+					<div class="option_wrap">
+						<ul class="clearfix">
+							<li><button><span>English</span></button></li><!--
+							--><li><button><span>日本語</span></button></li><!--
+							--><li><button><span>Français</span></button></li>
+						</ul>
+					</div>
+				</div>
+				<a id="btn_login" class="util_btns btn_login" href="#"><span class="blind">login</span></a>
+				<a id="btn_cart" class="util_btns btn_cart" href="#"><span class="blind">cart</span></a>
+			</div>
+			<ul class="clearfix">
+				<li>
+					<button class="btn_sub"><span>OUR COLLECTION</span></button>
+					<ul>
+						<li><a href="#">WINE OF MONTH</a></li>
+						<li><a href="#">WINE COLLECTION</a></li>
+						<li><a href="#">WINE TOOLS</a></li>
+					</ul>
+				</li><!--
+				--><li>
+					<button class="btn_sub"><span>PROMOTION</span></button>
+					<ul>
+						<li><a href="#">WINE SET</a></li>
+						<li><a href="#">WINERY TOUR</a></li>
+					</ul>
+				</li><!--
+			--><li>
+					<button class="btn_sub"><span>MAGAZINE</span></button>
+					<ul>
+						<li><a href="#">FEATURED WINE</a></li>
+						<li><a href="#">WINE NEWS</a></li>
+						<li><a href="#">WINE DICTIONARY</a></li>
+					</ul>
+				</li><!--
+			--><li>
+					<button class="btn_sub"><span>INFORMATION</span></button>
+					<ul>
+						<li><a href="#">NOTICE</a></li>
+						<li><a href="#">CUSTOMER SERVICE</a></li>
+						<li><a href="#">BRAND STORY</a></li>
+						<li><a href="#">OFFLINE STORE</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="visual">
+		<picture>
+			<source srcset="images/bg_notice_visual_M.jpg" media="(max-width: 1024px)">
+			<source srcset="images/bg_notice_visual_T.jpg" media="(min-width: 768px) and (max-width: )">
+			<source srcset="images/bg_notice_visual_D.jpg" media="(min-width: 1025px)">
+			<img src="images/bg_notice_visual.jpg" alt="Corkscrew and corks">
+		</picture>
+
+		<div class="info">
+			<p class="title_h2_pre">INFORMATION</p>
+			<h2>NOTICE</h2>
+		</div>
+	</section>
+
+	<section class="notice">
+		<div class="inner_wrap">
+			<p class="title_h2_pre">For Your Information</p>
+			<h2>HERE WE ARE</h2>
+
+			<div class="search">
+				<form class="form_search" action="search.jsp" method="post">
+					<label for="enter_search" class="blind">enter_search</label>
+					<input type="search" id="enter_search" placeholder="Enter your words"/>
+					<input type="submit" class="btn_search" value="Submit">
+				</form>
+			</div>
+			
+			<table class="table">
+				<colgroup>
+					<col>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="num">No.</th>
+						<th class="title">Title</th>
+						<th class="date">Date</th>
+						<th class="view">View</th>
+					<tr>
+				</thead>
+				<tbody>
+					<tr class="active" id="tr01">
+						<td class="num">90</td>
+						<td class="title"><a href="#" id="act_title">New red wine line will be launching on February, 2022</a></td>
+						<td class="date">2022.01.02</td>
+						<td class="view">34</td>
+					</tr>
+					<tr class="content" id="act_content">
+						<!--<td class="num">100</td>-->
+						<td colspan="4">FEELING GRAPE is releasing its new line of bottled wines on February, 2022.<br>The new wines, known simply as The Collection, will serve as FEELING GRAPE's premium line, with a price point of $299. That's in comparison to FEELING GRAPE's $80 California Roots wines, which it launched in 2017.</td>
+						<!--<td class="date">2022.01.02</td>-->
+						<!--<td class="view">134</td>-->
+					</tr>
+						<script>
+						$('#act_title').click(function(e) {
+							e.preventDefault();
+						});
+						
+						$('#act_title').click(function(){
+							$('#act_content').toggle();
+							$('#tr01').toggleClass('change');
+						})
+						</script>
+
+					<tr>
+						<td class="num">89</td>
+						<td class="title"><a href="#">Tours & Events - DECEMBER 2021</a></td>
+						<td class="date">2021.12.01</td>
+						<td class="view">76</td>
+					</tr>
+					<tr>
+						<td class="num">88</td>
+						<td class="title"><a href="#">2021 London Wine Competition Winners</a></td>
+						<td class="date">2021.10.30</td>
+						<td class="view">38</td>
+					</tr>
+					<tr>
+						<td class="num">87</td>
+						<td class="title"><a href="#">Price adjustment information</a></td>
+						<td class="date">2021.09.01</td>
+						<td class="view">80</td>
+					</tr>
+					<tr>
+						<td class="num">86</td>
+						<td class="title"><a href="#">2021 The Berlin Wine Trophy Winners</a></td>
+						<td class="date">2021.08.28</td>
+						<td class="view">94</td>
+					</tr>
+					<tr>
+						<td class="num">85</td>
+						<td class="title"><a href="#">Temporary winery tour closure information</a></td>
+						<td class="date">2021.07.25</td>
+						<td class="view">30</td>
+					</tr>
+					<tr>
+						<td class="num">84</td>
+						<td class="title"><a href="#">New offline store information</a></td>
+						<td class="date">2021.06.02</td>
+						<td class="view">11</td>
+					</tr>
+					<tr>
+						<td class="num">83</td>
+						<td class="title"><a href="#">New champagne line will be launching on June, 2021</a></td>
+						<td class="date">2021.05.16</td>
+						<td class="view">27</td>
+					</tr>
+					<tr>
+						<td class="num">82</td>
+						<td class="title"><a href="#">Apology for the delay in delivery</a></td>
+						<td class="date">2021.05.03</td>
+						<td class="view">20</td>
+					</tr>
+					<tr>
+						<td class="num">81</td>
+						<td class="title"><a href="#">Routine Maintenance - Server will be down on Friday between 4:00 and 5:00p.m.</a></td>
+						<td class="date">2021.04.04</td>
+						<td class="view">10</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="pagenation">
+				   <a href="#" class="first">≪</a><!--
+				--><a href="#" class="prev">&lt</a><!--
+				--><a href="#">1</a><!--
+				--><a href="#">2</a><!--
+				--><a href="#" class="active">3</a><!--
+				--><a href="#">4</a><!--
+				--><a href="#">5</a><!--
+				--><a href="#">6</a><!--
+				--><a href="#">7</a><!--
+				--><a href="#" class="next">&gt</a><!--
+				--><a href="#" class="last">≫</a>
+			</p>
+
+		</div>
+	</section>
+
+
+<footer> 
+	<div class="inner_wrap clearfix">
+		<div class="logo_wrap"><img src="images/img_header_logo_D.png" alt="footer logo"></div>
+		<div class="info_wraps left_bdr">
+			<p class="title">FEELING GRAPE</p>
+			<ul>
+				<li><a href="distribution.html">DISTRIBUTORS</a></li>
+				<li><a href="term.html">TERMS & CONDITIONS</a></li>
+				<li><a href="policy.html">PRIVACY POLICY</a></li>
+			</ul>
+		</div>
+		<div class="info_wraps center_bdr">
+			<p class="title">CUSTOMER CARE</p>
+			<ul>
+				<li><span>Email</span><a href="mailto:customercare@feelinggrape.com">customercare@feelinggrape.com</a></li>
+				<li><span>Phone</span><a href="tel:010-1234-5678">+82 10 1234 5678</a></li>
+			</ul>
+		</div>
+		<div class="info_wraps right_bdr">
+			<p class="title">SIGN UP TO OUR NEWSLETTER</p>
+			<ul>
+				<li>
+					<span>Keep in touch</span>
+					<form class="form_mail" action="mail.jsp" method="post">
+						<label for="enter_email" class="blind">enter_email</label>
+						<input type="email" id="enter_email" placeholder="Enter your email" required>
+						<input type="submit" class="btn_search" value="Submit">
+					</form>
+				</li>
+			</ul>
+		</div>
+		<p class="copy"><strong>ⓒ2021 FeelingGrape Corporate</strong></p>
+	</div>
+</footer>
+

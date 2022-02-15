@@ -1,0 +1,185 @@
+/*++++++++++++++++ Media Query +++++++++++++++++++*/
+/* sub_notice.html */
+
+@charset "utf-8";
+
+
+/* ====== mobile(start) =======*/
+@media screen and (max-width: 767px) {
+
+
+
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 250px; text-align: center; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual div.info { position: absolute; top: 50%; left: 50%; transform: translateX(-50%); }
+	section.visual div.info p { font-size: 0.75em; color: #fff; }
+	section.visual div.info h2 { font-size: 1.5em; color: #fff; }
+	section.visual div.info h2::after{ display: none; }
+
+
+	section.notice { margin-top: 50px; }
+	section.notice .inner_wrap { padding: 0 3.255208vw; }
+	section.notice div.search { margin-top: 20px; padding: 10px; text-align: right; background: url("../images/bg_notice_search.jpg") no-repeat; background-size: cover; }
+	section.notice div.search form { display: inline-block; padding: 0.3em 0.4em; background: #fff; line-height: 2; }
+	section.notice div.search form input[type = "search"] { width: 170px; margin-right: 0.5em; border: none; font-size: 0.75em; line-height: 1.8; vertical-align: middle; outline: none; }
+	section.notice div.search form input[type = "submit"] { padding: 0.4em 1em; border: none; background: #bbb; font-size: 0.75em; color: #222; vertical-align: middle; }
+	
+
+	section.notice > div.inner_wrap > table { width: 100%; margin: 30px 0; color: #333; table-layout: fixed; font-size: 0.75em; }
+	section.notice > div.inner_wrap > table .num { width: 10%; }
+	section.notice > div.inner_wrap > table .title { width: 60%; }
+	section.notice > div.inner_wrap > table .date { width: 30%; }
+	section.notice > div.inner_wrap > table .view { display: none; }
+
+	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 10px; }
+	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
+	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+
+
+	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr.change { background-color: #ede6d6; border: 0px; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: 10%; line-height: 1.5; }
+
+
+	p.pagenation { margin-bottom: 50px; text-align: center; }
+	p.pagenation > a { display: inline-block; width: 30px; height: 30px; border-radius: 3px; color: #222; font-size: 0.75em; line-height: 30px; }
+	p.pagenation > a:nth-last-of-type(3) { display: none; }
+	p.pagenation > a:nth-last-of-type(4) { display: none; }
+
+
+}
+/* ====== mobile(end) =======*/
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!! feelingrape       !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ====== tablet(start) =======*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 300px; text-align: center; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual div.info { position: absolute; top: 50%; left: 50%; transform: translateX(-50%); }
+	section.visual div.info p { font-size: 0.75em; color: #fff; }
+	section.visual div.info h2 { font-size: 2.25em; color: #fff; }
+	section.visual div.info h2::after{ display: none; }
+
+
+	section.notice { margin-top: 100px; }
+	section.notice .inner_wrap { padding: 0 3.255208vw; }
+	section.notice div.search { margin-top: 50px; padding: 30px; text-align: right; background: url("../images/bg_notice_search.jpg") no-repeat; background-size: cover; }
+	section.notice div.search form { display: inline-block; padding: 0.1em 0.4em 0.3em 0.4em; background: #fff; line-height: 2; }
+	section.notice div.search form input[type = "search"] { width: 190px; margin-right: 0.5em; border: none; font-size: 1em; line-height: 1.8; vertical-align: middle; outline: none; }
+	section.notice div.search form input[type = "submit"] { padding: 0.4em 1em 0.3em 1em; border: none; background: #bbb; color: #222; vertical-align: middle; }
+
+
+	section.notice > div.inner_wrap > table { width: 100%; margin: 50px 0; color: #333; table-layout: fixed; }
+	section.notice > div.inner_wrap > table .num { width: 10%; }
+	section.notice > div.inner_wrap > table .title { width: 60%; }
+	section.notice > div.inner_wrap > table .date { width: 20%; }
+	section.notice > div.inner_wrap > table .view { width: 10%; }
+
+	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 15px; }
+	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
+
+	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+
+	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr.change { background-color: #ede6d6; border: 0px; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
+
+
+	p.pagenation { margin-bottom: 100px; text-align: center; }
+	p.pagenation > a { display: inline-block; width: 30px; height: 30px; border-radius: 3px; color: #222; font-size: 1em; line-height: 30px; }
+
+
+
+}
+/* ====== tablet(end) =======*/
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!! feelingrape       !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ====== desktop(start) =======*/
+
+@media screen and (min-width: 1025px) {
+
+
+
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 400px; text-align: center; }
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual div.info { position: absolute; top: 50%; left: 50%; transform: translateX(-50%); }
+	section.visual div.info p { font-size: 1.125em; color: #fff; }
+	section.visual div.info h2 { font-size: 3.125em; color: #fff; }
+	section.visual div.info h2::after{ display: none; }
+
+	
+	section.notice { margin-top: 100px; }
+	section.notice div.search { margin-top: 50px; padding: 30px; text-align: right; background: url("../images/bg_notice_search.jpg") no-repeat; background-size: cover; }
+	section.notice div.search form { display: inline-block; padding: 0.1em 0.4em 0.3em 0.4em; background: #fff; line-height: 2; }
+	section.notice div.search form input[type = "search"] { width: 190px; margin-right: 0.5em; border: none; font-size: 1em; line-height: 1.8; vertical-align: middle; outline: none; }
+	section.notice div.search form input[type = "submit"] { padding: 0.4em 1em 0.3em 1em; border: none; background: #bbb; color: #222; vertical-align: middle; }
+
+
+	section.notice > div.inner_wrap > table { width: 100%; margin: 50px 0; color: #333; table-layout: fixed; }
+	section.notice > div.inner_wrap > table .num { width: 10%; }
+	section.notice > div.inner_wrap > table .title { width: 60%; }
+	section.notice > div.inner_wrap > table .date { width: 20%; }
+	section.notice > div.inner_wrap > table .view { width: 10%; }
+
+	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 20px; }
+	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
+
+	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+
+	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+	section.notice > div.inner_wrap > table > tbody > tr.change { background-color: #ede6d6; border: 0px; }
+	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	section.notice > div.inner_wrap > table > tbody > tr:hover > td { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr:hover > td > a { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr.content:hover > td { color: #333; font-weight: 500; }
+	section.notice > div.inner_wrap > table > tbody > tr:hover > td > a { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
+
+
+	p.pagenation { margin-bottom: 100px; text-align: center; }
+	p.pagenation > a { display: inline-block; width: 30px; height: 30px; border-radius: 3px; color: #222; font-size: 1em; line-height: 30px; }
+	p.pagenation > a:hover { background: #603813; color: #fff;}
+	p.pagenation > a.active { background: #603813; color: #fff;}
+
+
+
+}
+/* ====== desktop(end) =======*/
+
+
