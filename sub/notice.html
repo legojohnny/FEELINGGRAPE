@@ -118,100 +118,124 @@
 				</form>
 			</div>
 			
-			<table class="table">
-				<colgroup>
-					<col>
-					<col>
-					<col>
-					<col>
-				</colgroup>
-				<thead>
-					<tr>
-						<th class="num">No.</th>
-						<th class="title">Title</th>
-						<th class="date">Date</th>
-						<th class="view">View</th>
-					<tr>
-				</thead>
-				<tbody>
-					<tr class="active" id="tr01">
-						<td class="num">90</td>
-						<td class="title"><a href="#" id="act_title">New red wine line will be launching on February, 2022</a></td>
-						<td class="date">2022.01.02</td>
-						<td class="view">34</td>
-					</tr>
-					<tr class="content" id="act_content">
-						<!--<td class="num">100</td>-->
-						<td colspan="4">FEELING GRAPE is releasing its new line of bottled wines on February, 2022.<br>The new wines, known simply as The Collection, will serve as FEELING GRAPE's premium line, with a price point of $299. That's in comparison to FEELING GRAPE's $80 California Roots wines, which it launched in 2017.</td>
-						<!--<td class="date">2022.01.02</td>-->
-						<!--<td class="view">134</td>-->
-					</tr>
-						<script>
-						$('#act_title').click(function(e) {
-							e.preventDefault();
-						});
-						
-						$('#act_title').click(function(){
-							$('#act_content').toggle();
-							$('#tr01').toggleClass('change');
-						})
-						</script>
+			<table id="report">
+				<tr>
+					<th class="num">No.</th>
+					<th class="title">Title</th>
+					<th class="date">Date</th>
+					<th class="view">View</th>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">90</td>
+					<td class="title"><a href="#">New red wine line will be launching on February, 2022</a></td>
+					<td class="date">2022.01.02</td>
+					<td class="view">34</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">FEELING GRAPE is releasing its new line of bottled wines on February, 2022.<br>The new wines, known simply as The Collection, will serve as FEELING GRAPE's premium line, with a price point of $299. That's in comparison to FEELING GRAPE's $80 California Roots wines, which it launched in 2017.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">89</td>
+					<td class="title"><a href="#">Tours & Events - DECEMBER 2021</a></td>
+					<td class="date">2021.12.01</td>
+					<td class="view">76</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">At your arrival in Bordeaux, you will reach Saint-Emilion where you will be welcomed in Château de Môlet by the owners and wine-makers. You start your stay by a tour of the wine-estate and a wine-tasting.<br>Dinner in a restaurant near your accommodation (optional)</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">88</td>
+					<td class="title"><a href="#">2021 London Wine Competition Winners</a></td>
+					<td class="date">2021.10.30</td>
+					<td class="view">38</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">At the 4th edition of the London Wine Competition, which took place in London on October 17th 2021, FEELING GRAPE’s portfolio won a total of 8 medals, an ultimate seal of approval in the global wine industry.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">87</td>
+					<td class="title"><a href="#">Price adjustment information</a></td>
+					<td class="date">2021.09.01</td>
+					<td class="view">80</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">World wine trade has undergone an exponential dynamic in recent years because of the fall in domestic demand of the main traditional producing countries. Thus, our products' price can be adjusted, according to circumstances.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">86</td>
+					<td class="title"><a href="#">2021 The Berlin Wine Trophy Winners</a></td>
+					<td class="date">2021.08.28</td>
+					<td class="view">94</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">Feeling Valley Shiraz has won the gold medal in the Berliner Wein Trophy.<br>The Berliner Wine Trophy has become the world’s most important and largest international wine competition under the patronage of the OIV and the UIOE and brings together renowned experts from all over the world.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">85</td>
+					<td class="title"><a href="#">Temporary winery tour closure information</a></td>
+					<td class="date">2021.07.25</td>
+					<td class="view">30</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">Our highest priority is the comfort and safety of our Wine Club Members, guests, and employees. We have made the decision to close our Winery Tour until further notice, effective July 30, 2021, to reduce risks related to the spread of COVID-19.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">84</td>
+					<td class="title"><a href="#">New offline store information</a></td>
+					<td class="date">2021.06.02</td>
+					<td class="view">11</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">On June 01, 2021, our new offline store opened the doors of our unique wine concept ‘The Tasting Room’ on the Seoul in South Korea. Customers can experience our wine diretly at The Tasting Rooom.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">83</td>
+					<td class="title"><a href="#">New champagne line will be launching on June, 2021</a></td>
+					<td class="date">2021.05.16</td>
+					<td class="view">27</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">FEELING GRAPE has launched its new champagne line to the range in 2 years with the unveiling of a pure Pinot Noir Champagne. Called FEELING GRAPE PN, the latest line is the new Champagne to be added to the brand's permanent range since FEELING GRAPE Rosé was launched back in 2019.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">82</td>
+					<td class="title"><a href="#">Apology for the delay in delivery</a></td>
+					<td class="date">2021.05.03</td>
+					<td class="view">20</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">Apologize for the delay of shipment. We are experiencing delays due to higher volumes than normal preventing us from completing delivery on time. We are working to complete the deliveries as quickly as possible.</td>
+				</tr>
+				<tr class="tr_visible">
+					<td class="num">81</td>
+					<td class="title"><a href="#">Routine Maintenance - Server will be down on Friday between 4:00 and 5:00p.m.</a></td>
+					<td class="date">2021.04.05</td>
+					<td class="view">10</td>
+				</tr>
+				<tr class="content">
+					<td colspan="4">To accommodate for Daylight Savings and adjust our server times, Server will be taken down for maintenance on April 9, 2021 between 4:00 and 5:00p.m.<br>We appreciate your patience and understanding while we make this change and will have the game back up and running as soon as possible!</td>
+				</tr>
+<script>
+	$(document).ready(function(){
 
-					<tr>
-						<td class="num">89</td>
-						<td class="title"><a href="#">Tours & Events - DECEMBER 2021</a></td>
-						<td class="date">2021.12.01</td>
-						<td class="view">76</td>
-					</tr>
-					<tr>
-						<td class="num">88</td>
-						<td class="title"><a href="#">2021 London Wine Competition Winners</a></td>
-						<td class="date">2021.10.30</td>
-						<td class="view">38</td>
-					</tr>
-					<tr>
-						<td class="num">87</td>
-						<td class="title"><a href="#">Price adjustment information</a></td>
-						<td class="date">2021.09.01</td>
-						<td class="view">80</td>
-					</tr>
-					<tr>
-						<td class="num">86</td>
-						<td class="title"><a href="#">2021 The Berlin Wine Trophy Winners</a></td>
-						<td class="date">2021.08.28</td>
-						<td class="view">94</td>
-					</tr>
-					<tr>
-						<td class="num">85</td>
-						<td class="title"><a href="#">Temporary winery tour closure information</a></td>
-						<td class="date">2021.07.25</td>
-						<td class="view">30</td>
-					</tr>
-					<tr>
-						<td class="num">84</td>
-						<td class="title"><a href="#">New offline store information</a></td>
-						<td class="date">2021.06.02</td>
-						<td class="view">11</td>
-					</tr>
-					<tr>
-						<td class="num">83</td>
-						<td class="title"><a href="#">New champagne line will be launching on June, 2021</a></td>
-						<td class="date">2021.05.16</td>
-						<td class="view">27</td>
-					</tr>
-					<tr>
-						<td class="num">82</td>
-						<td class="title"><a href="#">Apology for the delay in delivery</a></td>
-						<td class="date">2021.05.03</td>
-						<td class="view">20</td>
-					</tr>
-					<tr>
-						<td class="num">81</td>
-						<td class="title"><a href="#">Routine Maintenance - Server will be down on Friday between 4:00 and 5:00p.m.</a></td>
-						<td class="date">2021.04.04</td>
-						<td class="view">10</td>
-					</tr>
-				</tbody>
+		$("#report tr:odd").addClass("odd");
+		$("#report tr:not(.odd)").hide(); 
+		$("#report tr:first-child").show(); //열머리글 보여주기
+
+		$('.tr_visible a').click(function(e) {
+			e.preventDefault();
+		});
+						
+		$("#report tr.odd").click(function(){
+			$(this).next("tr").toggle();
+		
+
+		});
+	   
+
+	});
+</script>
+
 			</table>
 
 			<p class="pagenation">

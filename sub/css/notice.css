@@ -34,7 +34,7 @@
 
 	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 10px; }
 	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
-	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+	section.notice > div.inner_wrap > table > tbody > tr:first-child { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
 
 
 	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
@@ -42,8 +42,8 @@
 	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: 10%; line-height: 1.5; }
+	section.notice > div.inner_wrap > table > tbody > tr.content { display: none; width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr.content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: 10%; line-height: 1.5; }
 
 
 	p.pagenation { margin-bottom: 50px; text-align: center; }
@@ -96,15 +96,15 @@
 	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 15px; }
 	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
 
-	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+	section.notice > div.inner_wrap > table > tbody > tr:first-child { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
 
 	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
 	section.notice > div.inner_wrap > table > tbody > tr.change { background-color: #ede6d6; border: 0px; }
 	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
+	section.notice > div.inner_wrap > table > tbody > tr.content { display: none; width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr.content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
 
 
 	p.pagenation { margin-bottom: 100px; text-align: center; }
@@ -157,9 +157,10 @@
 	section.notice > div.inner_wrap > table th, td { text-align: center; vertical-align: middle; padding: 20px; }
 	section.notice > div.inner_wrap > table td.title { text-align: left; vertical-align: middle; }
 
-	section.notice > div.inner_wrap > table > thead { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
+	section.notice > div.inner_wrap > table > tbody > tr:first-child { height: 50px; border-top: 2px solid #603813; border-bottom: 2px solid #603813; }
 
 	section.notice > div.inner_wrap > table > tbody > tr { border-bottom: 1px solid #ccc; }
+
 	section.notice > div.inner_wrap > table > tbody > tr.change { background-color: #ede6d6; border: 0px; }
 	section.notice > div.inner_wrap > table > tbody > tr > td > a { display: block; width: 100%; line-height: 2; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 	section.notice > div.inner_wrap > table > tbody > tr:hover > td { color: #603813; font-weight: bold; }
@@ -168,8 +169,8 @@
 	section.notice > div.inner_wrap > table > tbody > tr:hover > td > a { color: #603813; font-weight: bold; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td { color: #603813; font-weight: bold; }
 	section.notice > div.inner_wrap > table > tbody > tr.active > td > a { color: #603813; font-weight: bold; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content { display: none; width: 100%; background: #ede6d6; }
-	section.notice > div.inner_wrap > table > tbody > tr#act_content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
+	section.notice > div.inner_wrap > table > tbody > tr.content { width: 100%; background: #ede6d6; }
+	section.notice > div.inner_wrap > table > tbody > tr.content > td { text-align: left; padding: 3% 10% 10%; background: url("../images/img_header_logo_M.png") no-repeat 96% 90%; background-size: auto; line-height: 1.5; }
 
 
 	p.pagenation { margin-bottom: 100px; text-align: center; }
