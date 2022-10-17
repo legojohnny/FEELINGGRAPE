@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<title>FeelingGrape</title>
@@ -9,45 +10,57 @@
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
 	<style type="text/css">
-	
+
 
 	</style>
 	<!-- [if lt IE9]
 		<script src="js/html5shiv.js"></script>
 	<![endif]-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+
 	<script type="text/javascript">
-	window.onload = function(){
+		window.onload = function () {
 
-		var elm_header = document.querySelector('header');
-		var btn_menu = document.querySelector('.btn_menu');
+			var elm_header = document.querySelector('header');
+			var btn_menu = document.querySelector('.btn_menu');
 
-		btn_menu.addEventListener('click', function(){
-			elm_header.classList.toggle('on'); 
-		});
+			btn_menu.addEventListener('click', function () {
+				elm_header.classList.toggle('on');
+			});
 
-}
+		}
 
 	</script>
 
 </head>
-	
+
 <body>
 
 
-	<header> 
+	<header>
 		<h1><a href="index.html"><span class="blind">FeelingGrape Logo</span></a></h1>
 		<button class="btn_menu"><span class="blind">menu</span></button>
 
 		<nav>
 			<div class="utility">
-				<div class="lang_wrap"><!--랭랩은 높이값을 옵션에 포함 안시켜서 줘야함-->
-					<div class="select_lang"><span class="select_value">English</span><button class="btn_expand"><span class="blind">country change</span></button>
+				<div class="lang_wrap">
+					<!--랭랩은 높이값을 옵션에 포함 안시켜서 줘야함-->
+					<div class="select_lang"><span class="select_value">English</span><button class="btn_expand"><span
+								class="blind">country change</span></button>
 					</div>
 					<div class="option_wrap">
 						<ul class="clearfix">
-							<li><button><span>English</span></button></li><!--
-							--><li><button><span>日本語</span></button></li><!--
-							--><li><button><span>Français</span></button></li>
+							<li><button><span>English</span></button></li>
+							<!--
+							-->
+							<li><button><span>日本語</span></button></li>
+							<!--
+							-->
+							<li><button><span>Français</span></button></li>
 						</ul>
 					</div>
 				</div>
@@ -62,23 +75,29 @@
 						<li><a href="#">WINE COLLECTION</a></li>
 						<li><a href="#">WINE TOOLS</a></li>
 					</ul>
-				</li><!--
-				--><li>
+				</li>
+				<!--
+				-->
+				<li>
 					<button class="btn_sub"><span>PROMOTION</span></button>
 					<ul>
 						<li><a href="#">WINE SET</a></li>
 						<li><a href="#">WINERY TOUR</a></li>
 					</ul>
-				</li><!--
-			--><li>
+				</li>
+				<!--
+			-->
+				<li>
 					<button class="btn_sub"><span>MAGAZINE</span></button>
 					<ul>
 						<li><a href="#">FEATURED WINE</a></li>
 						<li><a href="#">WINE NEWS</a></li>
 						<li><a href="#">WINE DICTIONARY</a></li>
 					</ul>
-				</li><!--
-			--><li>
+				</li>
+				<!--
+			-->
+				<li>
 					<button class="btn_sub"><span>INFORMATION</span></button>
 					<ul>
 						<li><a href="sub/notice.html" style="font-weight: bold">NOTICE</a></li>
@@ -93,305 +112,340 @@
 
 
 
-<section class="visual">
-	<h2 class="blind">visual section</h2>
-	<div class="slides cur">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_01_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_01_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_01_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_01_D.jpg" alt="glass fair">
-			</picture>
-		<p class="title">WE BELIEVE THAT LIFE'S MORE<br>FUN WHEN WE'RE TOGETHER</p>
+	<section class="visual">
+		<h2 class="blind">visual section</h2>
+		<div class="slides cur">
+			<div class="rel">
+				<picture>
+					<source srcset="images/img_index_visual_01_M.jpg" media="(max-width: 767px)">
+					<source srcset="images/img_index_visual_01_T.jpg"
+						media="(min-width: 768px) and (max-width: 1024px)">
+					<source srcset="images/img_index_visual_01_D.jpg" media="(min-width: 1025px)">
+					<img src="images/img_index_visual_01_D.jpg" alt="glass fair">
+				</picture>
+				<p class="title">WE BELIEVE THAT LIFE'S MORE<br>FUN WHEN WE'RE TOGETHER</p>
+			</div>
 		</div>
-	</div>
-	</div>
-	<div class="slides next">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_02_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_02_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_02_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_02_D.jpg" alt="rose wine and flowers">
-			</picture>
 		</div>
-		<p class="title">QUALITY WINES FOR<br>EVERYONE TO ENJOY</p>
-	</div>
-	<div class="slides pre">
-		<div class="rel">
-			<picture>
-				<source srcset="images/img_index_visual_03_M.jpg" media="(max-width: 767px)">
-				<source srcset="images/img_index_visual_03_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-				<source srcset="images/img_index_visual_03_D.jpg" media="(min-width: 1025px)">
-				<img src="images/img_index_visual_03_D.jpg" alt="red wine and a farm background">
-			</picture>
+		<div class="slides next">
+			<div class="rel">
+				<picture>
+					<source srcset="images/img_index_visual_02_M.jpg" media="(max-width: 767px)">
+					<source srcset="images/img_index_visual_02_T.jpg"
+						media="(min-width: 768px) and (max-width: 1024px)">
+					<source srcset="images/img_index_visual_02_D.jpg" media="(min-width: 1025px)">
+					<img src="images/img_index_visual_02_D.jpg" alt="rose wine and flowers">
+				</picture>
+			</div>
+			<p class="title">QUALITY WINES FOR<br>EVERYONE TO ENJOY</p>
 		</div>
-		<p class="title">HOME IS WHERE<br>THE WINE IS</p>
-	</div>
-	<div class="pagination">
-		<button class="pages active"><span><span class="blind">slides01</span></span></button><!--
-		--><button class="pages"><span><span class="blind">slides02</span></span></button><!--
+		<div class="slides pre">
+			<div class="rel">
+				<picture>
+					<source srcset="images/img_index_visual_03_M.jpg" media="(max-width: 767px)">
+					<source srcset="images/img_index_visual_03_T.jpg"
+						media="(min-width: 768px) and (max-width: 1024px)">
+					<source srcset="images/img_index_visual_03_D.jpg" media="(min-width: 1025px)">
+					<img src="images/img_index_visual_03_D.jpg" alt="red wine and a farm background">
+				</picture>
+			</div>
+			<p class="title">HOME IS WHERE<br>THE WINE IS</p>
+		</div>
+		<div class="pagination">
+			<button class="pages active"><span><span class="blind">slides01</span></span></button>
+			<!--
+		--><button class="pages"><span><span class="blind">slides02</span></span></button>
+			<!--
 		--><button class="pages"><span><span class="blind">slides03</span></span></button>
-	</div>
-</section>
+		</div>
+	</section>
 
 
 
 
 
-<section class="month">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">Featured 2021</p>
-		<h2>Wine Of The Month</h2>
-		<div class="content_wrap">
-			<div class="info_wrap clearfix">
-				<div class="info">
-					<p class="title">Feeling Valley Shiraz</p>
-					<p class="color _red">Red</p>
-					<p class="country _fra"><span>France</span></p>
-					<p class="price">Price: $80</p>
-					<p class="desc">Feeling Valley Shiraz is everything a great wine should be vibrant, smooth, rich and easy to drink</p>
-					<p class="flavour">Flavour : Rich and smooth, with juicy red berries and hints of vanilla and spice</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+	<section class="month">
+		<div class="inner_wrap">
+			<p class="title_h2_pre">Featured 2021</p>
+			<h2>Wine Of The Month</h2>
+			<div class="content_wrap">
+				<div class="info_wrap clearfix">
+					<div class="info">
+						<p class="title">Feeling Valley Shiraz</p>
+						<p class="color _red">Red</p>
+						<p class="country _fra"><span>France</span></p>
+						<p class="price">Price: $80</p>
+						<p class="desc">Feeling Valley Shiraz is everything a great wine should be vibrant, smooth, rich
+							and easy to drink</p>
+						<p class="flavour">Flavour : Rich and smooth, with juicy red berries and hints of vanilla and
+							spice</p>
+						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+					</div>
+					<div class="info">
+						<p class="title">Feeling Zest Sangria</p>
+						<p class="color _red">Red</p>
+						<p class="country _spa"><span>Spain</span></p>
+						<p class="price">Price: $90</p>
+						<p class="desc">Inspired by the traditional drink of Spain, [Feeling Zest] Sangria combines
+							premium red wine with a splash of sweet citrus for a party-starter in a bottle</p>
+						<p class="flavour">Flavour : Sweet and refreshing, bursting with citrus flavors including
+							mandarin & orange with a hint of red fruits</p>
+						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+					</div>
+					<div class="info">
+						<p class="title">Feeling Cellars Chardonnay</p>
+						<p class="color _white">White</p>
+						<p class="country _ita"><span>Italy</span></p>
+						<p class="price">Price: $85</p>
+						<p class="desc">This [Feeling Cellars] Chardonnay is everything a great wine should be –
+							vibrant, flavorsome, fresh and easy to drink</p>
+						<p class="flavour">Flavour : Rich and vibrant, with fresh peach and melon flavors and a hint of
+							vanilla</p>
+						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+					</div>
 				</div>
-				<div class="info">
-					<p class="title">Feeling Zest Sangria</p>
-					<p class="color _red">Red</p>
-					<p class="country _spa"><span>Spain</span></p>
-					<p class="price">Price: $90</p>
-					<p class="desc">Inspired by the traditional drink of Spain, [Feeling Zest] Sangria combines premium red wine with a splash of sweet citrus for a party-starter in a bottle</p>
-					<p class="flavour">Flavour : Sweet and refreshing, bursting with citrus flavors including mandarin & orange with a hint of red fruits</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+				<div class="img_wrap view_mask">
+					<ul class="clearfix">
+						<li><img src="images/img_index_month_01.jpg" alt="shiraz wine"></li>
+						<li><img src="images/img_index_month_02.jpg" alt="sangria wine"></li>
+						<li><img src="images/img_index_month_03.jpg" alt="chardonnay wine"></li>
+					</ul>
 				</div>
-				<div class="info">
-					<p class="title">Feeling Cellars Chardonnay</p>
-					<p class="color _white">White</p>
-					<p class="country _ita"><span>Italy</span></p>
-					<p class="price">Price: $85</p>
-					<p class="desc">This [Feeling Cellars] Chardonnay is everything a great wine should be – vibrant, flavorsome, fresh and easy to drink</p>
-					<p class="flavour">Flavour : Rich and vibrant, with fresh peach and melon flavors and a hint of vanilla</p>
-					<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+				<div class="month_wrap">
+					<p class="month active">AUG</p>
+					<p class="month">SEP</p>
+					<p class="month">OCT</p>
+					<p class="year">2021</p>
 				</div>
 			</div>
-			<div class="img_wrap view_mask">
-				<ul class="clearfix">
-					<li><img src="images/img_index_month_01.jpg" alt="shiraz wine"></li>
-					<li><img src="images/img_index_month_02.jpg" alt="sangria wine"></li>
-					<li><img src="images/img_index_month_03.jpg" alt="chardonnay wine"></li>
+			<div class="pagination">
+				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
+				<!--
+		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="collection">
+		<div class="inner_wrap">
+			<p class="title_h2_pre">Our Wines</p>
+			<h2>SHOP BY<br>COLLECTION</h2>
+			<div class="content_wrap">
+				<div class="tabs_wrap">
+					<!---묶어서 상단으로 보내는 역할만 함.-->
+					<div class="rel">
+						<!---border-bottom으로 하단의 선 만들어주는 역할, 바(absolute)가 움직이도록 relative 역할도 함.-->
+						<button><span>RED WINE</span></button>
+						<!-- 바깥쪽 넓이를 button이 만들고(25%), 안쪽의 모양을 span(넓이는 button과 동일 (25%))이 만듦.
+					--><button><span>ROSE WINE</span></button>
+						<!--inline-block 시 주석공백처리(float해도 되는데 div아니고 button 4개니까 굳이 float할 필요 없음)
+					--><button><span>WHITE WINE</span></button>
+						<!--
+					--><button><span>CHAMPAGNE</span></button>
+						<span class="bar"><span class="blind">bottom bar</span></span>
+					</div>
+				</div>
+				<ul class="lists_wrap change_wraps clearfix">
+					<li>
+						<picture>
+							<source srcset="images/img_collection_red_DM.jpg" media="max-width: 767px)">
+							<source srcset="images/img_collection_red_T.jpg"
+								media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_collection_red_DM.jpg" media="(min-width: 1025px)">
+							<img src="images/img_collection_red_DM.jpg" alt="red wine collection">
+						</picture>
+						<div class="info">
+							<p class="title_pre">COLLECTION</p>
+							<p class="title">RED WINE</p>
+							<a class="btn_common _M _W" href="redwine.html"><span>SHOP NOW</span></a>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="images/img_collection_rose_DM.jpg" media="max-width: 767px)">
+							<source srcset="images/img_collection_rose_T.jpg"
+								media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_collection_rose_DM.jpg" media="(min-width: 1025px)">
+							<img src="images/img_collection_rose_DM.jpg" alt="red wine collection">
+						</picture>
+						<div class="info">
+							<p class="title_pre">COLLECTION</p>
+							<p class="title">ROSE WINE</p>
+							<a class="btn_common _M _W" href="rosewine.html"><span>SHOP NOW</span></a>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="images/img_collection_white_DM.jpg" media="max-width: 767px)">
+							<source srcset="images/img_collection_white_T.jpg"
+								media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_collection_white_DM.jpg" media="(min-width: 1025px)">
+							<img src="images/img_collection_white_DM.jpg" alt="red wine collection">
+						</picture>
+						<div class="info">
+							<p class="title_pre">COLLECTION</p>
+							<p class="title">WHITE WINE</p>
+							<a class="btn_common _M _W" href="whitewine.html"><span>SHOP NOW</span></a>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="images/img_collection_champ_DM.jpg" media="max-width: 767px)">
+							<source srcset="images/img_collection_champ_T.jpg"
+								media="(min-width: 768px) and (max-width: 1024px)">
+							<source srcset="images/img_collection_champ_DM.jpg" media="(min-width: 1025px)">
+							<img src="images/img_collection_champ_DM.jpg" alt="red wine collection">
+						</picture>
+						<div class="info">
+							<p class="title_pre">COLLECTION</p>
+							<p class="title">CHAMPAGNE</p>
+							<a class="btn_common _M _W" href="champwine.html"><span>SHOP NOW</span></a>
+						</div>
+					</li>
 				</ul>
 			</div>
-			<div class="month_wrap">
-				<p class="month active">AUG</p>
-				<p class="month">SEP</p>
-				<p class="month">OCT</p>
-				<p class="year">2021</p>
-			</div>
 		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
-		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+	</section>
+
+
+
+	<section class="slogan">
+		<h2 class="blind">slogan</h2>
+		<ul class="clearfix">
+			<li>
+				<img src="images/img_index_slogan_grape.png" alt="slogan one feeling great">
+				<p class="title">FEELING GREAT</p>
+				<p class="desc">We always try to say the joy and happiness that everyone can feel fairly through our
+					wine.</p>
+			</li>
+			<li>
+				<img src="images/img_index_slogan_handcup.png" alt="slogan two reasonable select">
+				<p class="title">REASONABLE SELECT</p>
+				<p class="desc">Red, white, rose, champagne are flexible or systematic. With the variety of rational
+					wines Surprise you. Choose the best one. It suits your taste.</p>
+			</li>
+			<li>
+				<img src="images/img_index_slogan_root.png" alt="slogan three making heritage">
+				<p class="title">MAKING HERITAGE</p>
+				<p class="desc">Branching, blooming, harvesting. Find the farmland of vineyards and wine breweries and
+					feel the Heritage with us.</p>
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="brand clearfix">
+		<h2 class="blind">Brand</h2>
+		<div class="img_wrap imgs_change_interval">
+			<img src="images/img_index_brand_01.jpg" alt="grape on hands">
+			<img src="images/img_index_brand_02.jpg" alt="barrel storage">
+			<img src="images/img_index_brand_03.jpg" alt="grape farm">
 		</div>
-	</div>
-</section>
-
-
-
-
-<section class="collection">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">Our Wines</p>
-		<h2>SHOP BY<br>COLLECTION</h2>
-		<div class="content_wrap">
-			<div class="tabs_wrap"> <!---묶어서 상단으로 보내는 역할만 함.-->
-				<div class="rel"> <!---border-bottom으로 하단의 선 만들어주는 역할, 바(absolute)가 움직이도록 relative 역할도 함.-->
-					<button><span>RED WINE</span></button><!-- 바깥쪽 넓이를 button이 만들고(25%), 안쪽의 모양을 span(넓이는 button과 동일 (25%))이 만듦.
-					--><button><span>ROSE WINE</span></button><!--inline-block 시 주석공백처리(float해도 되는데 div아니고 button 4개니까 굳이 float할 필요 없음)
-					--><button><span>WHITE WINE</span></button><!--
-					--><button><span>CHAMPAGNE</span></button>
-					<span class="bar"><span class="blind">bottom bar</span></span>
+		<div class="info_wrap clearfix">
+			<div class="inner_wrap_half">
+				<div class="info">
+					<p class="title_pre">FeelingGrape</p>
+					<p class="title">Our Legacy...</p>
+					<p class="desc">In the autumn of 1996, a truly prestigious pair the late Dr Choi of Korea and the
+						late Baron Edmond of France came together to establish FeelingGrape with fulfilled a shared
+						vision. A dream to create iconic Korea wines of exceptional quality, sealed with a promise to
+						uphold an unwavering dedication to precision, and perfection.</p>
+					<a class="btn_common _M _BK" href="story.html"><span>Discover Our Story</span></a>
 				</div>
 			</div>
-			<ul class="lists_wrap change_wraps clearfix">
-				<li>
-					<picture>
-						<source srcset="images/img_collection_red_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_red_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_red_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_red_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">RED WINE</p>
-						<a class="btn_common _M _W" href="redwine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_rose_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_rose_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_rose_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_rose_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">ROSE WINE</p>
-						<a class="btn_common _M _W" href="rosewine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_white_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_white_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_white_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_white_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">WHITE WINE</p>
-						<a class="btn_common _M _W" href="whitewine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-				<li>
-					<picture>
-						<source srcset="images/img_collection_champ_DM.jpg" media="max-width: 767px)">
-						<source srcset="images/img_collection_champ_T.jpg" media="(min-width: 768px) and (max-width: 1024px)">
-						<source srcset="images/img_collection_champ_DM.jpg" media="(min-width: 1025px)">
-						<img src="images/img_collection_champ_DM.jpg" alt="red wine collection">
-					</picture>
-					<div class="info">
-						<p class="title_pre">COLLECTION</p>
-						<p class="title">CHAMPAGNE</p>
-						<a class="btn_common _M _W" href="champwine.html"><span>SHOP NOW</span></a>
-					</div>
-				</li>
-			</ul>
 		</div>
-	</div>
-</section>
+	</section>
 
 
-
-<section class="slogan">
-	<h2 class="blind">slogan</h2>
-	<ul class="clearfix">
-		<li>
-			<img src="images/img_index_slogan_grape.png" alt="slogan one feeling great">
-			<p class="title">FEELING GREAT</p>
-			<p class="desc">We always try to say the joy and happiness that everyone can feel fairly through our wine.</p>
-		</li>
-		<li>
-			<img src="images/img_index_slogan_handcup.png" alt="slogan two reasonable select">
-			<p class="title">REASONABLE SELECT</p>
-			<p class="desc">Red, white, rose, champagne are flexible or systematic. With the variety of rational wines Surprise you. Choose the best one. It suits your taste.</p>
-		</li>
-		<li>
-			<img src="images/img_index_slogan_root.png" alt="slogan three making heritage">
-			<p class="title">MAKING HERITAGE</p>
-			<p class="desc">Branching, blooming, harvesting. Find the farmland of vineyards and wine breweries and feel the Heritage with us.</p>
-		</li>
-	</ul>
-</section>
-
-<!--이미지가 상단에 온 이유는 모바일 구성 때문임-->
-<section class="brand clearfix">
-	<h2 class="blind">Brand</h2>
-	<div class="img_wrap imgs_change_interval">
-		<img src="images/img_index_brand_01.jpg" alt="grape on hands">
-		<img src="images/img_index_brand_02.jpg" alt="barrel storage">
-		<img src="images/img_index_brand_03.jpg" alt="grape farm">
-	</div>
-	<div class="info_wrap clearfix">
-		<div class="inner_wrap_half">
-			<div class="info">
-				<p class="title_pre">FeelingGrape</p>
-				<p class="title">Our Legacy...</p>
-				<p class="desc">In the autumn of 1996, a truly prestigious pair the late Dr Choi of Korea and the late Baron Edmond of France came together to establish FeelingGrape with fulfilled a shared vision. A dream to create iconic Korea wines of exceptional quality, sealed with a promise to uphold an unwavering dedication to precision, and perfection.</p>
-				<a class="btn_common _M _BK" href="story.html"><span>Discover Our Story</span></a>
+	<section class="tools">
+		<div class="inner_wrap">
+			<p class="title_h2_pre">The Best</p>
+			<h2>Wine Tools</h2>
+			<a class="btn_common _M _BK" href="#"><span>Shop Now</span></a>
+		</div>
+		<div class="inner_wrap_02">
+			<div class="view_mask">
+				<ul>
+					<li>
+						<img src="images/img_index_tool_01.jpg" alt="">
+						<p class="title">Alpha Wine Decanter</p>
+						<p class="price">$150</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+					<li>
+						<img src="images/img_index_tool_02.jpg" alt="">
+						<p class="title">Anna Silver Opener</p>
+						<p class="price">$170</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+					<li>
+						<img src="images/img_index_tool_03.jpg" alt="">
+						<p class="title">Classic Ice Bucket</p>
+						<p class="price">$210</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+					<li>
+						<img src="images/img_index_tool_04.jpg" alt="">
+						<p class="title">Bohemian Glass Coupe Set</p>
+						<p class="price">$330</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+					<li>
+						<img src="images/img_index_tool_05.jpg" alt="">
+						<p class="title">Alessandro Silver Opener</p>
+						<p class="price">$175</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+					<li>
+						<img src="images/img_index_tool_06.jpg" alt="">
+						<p class="title">Barkcellar Wine Storage</p>
+						<p class="price">$240</p>
+						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+					</li>
+				</ul>
+			</div>
+			<div class="pagination">
+				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
+				<!--
+			--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
 			</div>
 		</div>
-	</div>
-</section>
-
-
-<section class="tools">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">The Best</p>
-		<h2>Wine Tools</h2>
-		<a class="btn_common _M _BK" href="#"><span>Shop Now</span></a>
-	</div>
-	<div class="inner_wrap_02">
-		<div class="view_mask">
-			<ul>
-				<li>
-					<img src="images/img_index_tool_01.jpg" alt="">
-					<p class="title">Alpha Wine Decanter</p>
-					<p class="price">$150</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_02.jpg" alt="">
-					<p class="title">Anna Silver Opener</p>
-					<p class="price">$170</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_03.jpg" alt="">
-					<p class="title">Classic Ice Bucket</p>
-					<p class="price">$210</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_04.jpg" alt="">
-					<p class="title">Bohemian Glass Coupe Set</p>
-					<p class="price">$330</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_05.jpg" alt="">
-					<p class="title">Alessandro Silver Opener</p>
-					<p class="price">$175</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-				<li>
-					<img src="images/img_index_tool_06.jpg" alt="">
-					<p class="title">Barkcellar Wine Storage</p>
-					<p class="price">$240</p>
-					<button class="btn_common _S _BK"><span>Add to cart</span></button>
-				</li>
-			</ul>
-		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
-			--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
-		</div>
-	</div>
-</section>
+	</section>
 
 
 
 
-<section class="news">
-	<div class="inner_wrap">
-		<p class="title_h2_pre">More Fun With</p>
-		<h2>Grape Magazine</h2>
-		<a class="btn_common _M _BK" href="news.html"><span>Learn More</span></a>
-		<div class="view_mask">
-			<ul>
-				<li><a href="news.html#news_01"><img src="images/img_index_news_01.jpg" alt="card news new selection"></a></li>
-				<li><a href="news.html#news_02"><img src="images/img_index_news_02.jpg" alt="card news winery tour event"></a></li>
-				<li><a href="news.html#news_03"><img src="images/img_index_news_03.jpg" alt="card news the perfect pai"></a></li>
-				<li><a href="news.html#news_04"><img src="images/img_index_news_04.jpg" alt="card news premimum wine"></a></li>
-				<li><a href="news.html#news_05"><img src="images/img_index_news_05.jpg" alt="card news choose wisely"></a></li>
-				<li><a href="news.html#news_06"><img src="images/img_index_news_06.jpg" alt="card news wine party"></a></li>
-			</ul>
-		</div>
-		<div class="pagination">
-			<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button><!--
+	<section class="news">
+		<div class="inner_wrap">
+			<p class="title_h2_pre">More Fun With</p>
+			<h2>Grape Magazine</h2>
+			<a class="btn_common _M _BK" href="news.html"><span>Learn More</span></a>
+			<div class="view_mask">
+				<ul>
+					<li><a href="news.html#news_01"><img src="images/img_index_news_01.jpg"
+								alt="card news new selection"></a></li>
+					<li><a href="news.html#news_02"><img src="images/img_index_news_02.jpg"
+								alt="card news winery tour event"></a></li>
+					<li><a href="news.html#news_03"><img src="images/img_index_news_03.jpg"
+								alt="card news the perfect pai"></a></li>
+					<li><a href="news.html#news_04"><img src="images/img_index_news_04.jpg"
+								alt="card news premimum wine"></a></li>
+					<li><a href="news.html#news_05"><img src="images/img_index_news_05.jpg"
+								alt="card news choose wisely"></a></li>
+					<li><a href="news.html#news_06"><img src="images/img_index_news_06.jpg"
+								alt="card news wine party"></a></li>
+				</ul>
+			</div>
+			<div class="pagination">
+				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
+				<!--
 		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 
 
@@ -400,38 +454,38 @@
 
 
 
-<footer> 
-	<div class="inner_wrap clearfix">
-		<div class="logo_wrap"><img src="images/img_header_logo_D.png" alt="footer logo"></div>
-		<div class="info_wraps left_bdr">
-			<p class="title">FEELING GRAPE</p>
-			<ul>
-				<li><a href="distribution.html">DISTRIBUTORS</a></li>
-				<li><a href="term.html">TERMS & CONDITIONS</a></li>
-				<li><a href="policy.html">PRIVACY POLICY</a></li>
-			</ul>
+	<footer>
+		<div class="inner_wrap clearfix">
+			<div class="logo_wrap"><img src="images/img_header_logo_D.png" alt="footer logo"></div>
+			<div class="info_wraps left_bdr">
+				<p class="title">FEELING GRAPE</p>
+				<ul>
+					<li><a href="distribution.html">DISTRIBUTORS</a></li>
+					<li><a href="term.html">TERMS & CONDITIONS</a></li>
+					<li><a href="policy.html">PRIVACY POLICY</a></li>
+				</ul>
+			</div>
+			<div class="info_wraps center_bdr">
+				<p class="title">CUSTOMER CARE</p>
+				<ul>
+					<li><span>Email</span><a
+							href="mailto:customercare@feelinggrape.com">customercare@feelinggrape.com</a></li>
+					<li><span>Phone</span><a href="tel:010-1234-5678">+82 10 1234 5678</a></li>
+				</ul>
+			</div>
+			<div class="info_wraps right_bdr">
+				<p class="title">SIGN UP TO OUR NEWSLETTER</p>
+				<ul>
+					<li>
+						<span>Keep in touch</span>
+						<form class="form_mail" action="mail.jsp" method="post">
+							<label for="enter_email" class="blind">enter_email</label>
+							<input type="email" id="enter_email" placeholder="Enter your email" required>
+							<input type="submit" class="btn_search" value="Submit">
+						</form>
+					</li>
+				</ul>
+			</div>
+			<p class="copy"><strong>ⓒ2021 FeelingGrape Corporate</strong></p>
 		</div>
-		<div class="info_wraps center_bdr">
-			<p class="title">CUSTOMER CARE</p>
-			<ul>
-				<li><span>Email</span><a href="mailto:customercare@feelinggrape.com">customercare@feelinggrape.com</a></li>
-				<li><span>Phone</span><a href="tel:010-1234-5678">+82 10 1234 5678</a></li>
-			</ul>
-		</div>
-		<div class="info_wraps right_bdr">
-			<p class="title">SIGN UP TO OUR NEWSLETTER</p>
-			<ul>
-				<li>
-					<span>Keep in touch</span>
-					<form class="form_mail" action="mail.jsp" method="post">
-						<label for="enter_email" class="blind">enter_email</label>
-						<input type="email" id="enter_email" placeholder="Enter your email" required>
-						<input type="submit" class="btn_search" value="Submit">
-					</form>
-				</li>
-			</ul>
-		</div>
-		<p class="copy"><strong>ⓒ2021 FeelingGrape Corporate</strong></p>
-	</div>
-</footer>
-
+	</footer>
