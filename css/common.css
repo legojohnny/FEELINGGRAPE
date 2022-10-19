@@ -1,445 +1,1195 @@
-/*+++++++++++++++++++++++ media query +++++++++++++++++++++++*/
-/* index.html */
-
 @charset "utf-8";
 
 /* playfair-display-regular - latin */
 @font-face {
-	font-family: 'PlayfairDisplay-Regular';
-	src: url('../font/playfair-display-v25-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/playfair-display-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/playfair-display-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/playfair-display-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../font/playfair-display-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/playfair-display-v25-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  font-family: "PlayfairDisplay-Regular";
+  src: url("../font/playfair-display-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/playfair-display-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/playfair-display-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../font/playfair-display-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../font/playfair-display-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/playfair-display-v25-latin-regular.svg#PlayfairDisplay")
+      format("svg"); /* Legacy iOS */
 }
 
 /* playfair-display-500 - latin */
 @font-face {
-	font-family: 'PlayfairDisplay-Medium';
-	src: url('../font/playfair-display-v25-latin-500.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/playfair-display-v25-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/playfair-display-v25-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/playfair-display-v25-latin-500.woff') format('woff'), /* Modern Browsers */
-		url('../font/playfair-display-v25-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/playfair-display-v25-latin-500.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  font-family: "PlayfairDisplay-Medium";
+  src: url("../font/playfair-display-v25-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/playfair-display-v25-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/playfair-display-v25-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../font/playfair-display-v25-latin-500.woff") format("woff"),
+    /* Modern Browsers */ url("../font/playfair-display-v25-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/playfair-display-v25-latin-500.svg#PlayfairDisplay")
+      format("svg"); /* Legacy iOS */
 }
 
 /* playfair-display-italic - latin */
 @font-face {
-	font-family: 'PlayfairDisplay-Italic';
-	src: url('../font/playfair-display-v25-latin-italic.eot'); /* IE9 Compat Modes */
-	src: local('PlayfairDisplay-Italic'),
-		url('../font/playfair-display-v25-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/playfair-display-v25-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/playfair-display-v25-latin-italic.woff') format('woff'), /* Modern Browsers */
-		url('../font/playfair-display-v25-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/playfair-display-v25-latin-italic.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../font/playfair-display-v25-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local("PlayfairDisplay-Italic"),
+    url("../font/playfair-display-v25-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/playfair-display-v25-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../font/playfair-display-v25-latin-italic.woff") format("woff"),
+    /* Modern Browsers */ url("../font/playfair-display-v25-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/playfair-display-v25-latin-italic.svg#PlayfairDisplay")
+      format("svg"); /* Legacy iOS */
 }
 
 /* playfair-display-500italic - latin */
 @font-face {
-	font-family: 'PlayfairDisplay-MediumItalic';
-	src: url('../font/playfair-display-v25-latin-500italic.eot'); /* IE9 Compat Modes */
-	src: local(''),
-      		url('../font/playfair-display-v25-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   		url('../font/playfair-display-v25-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
-   		url('../font/playfair-display-v25-latin-500italic.woff') format('woff'), /* Modern Browsers */
-   		url('../font/playfair-display-v25-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
-    		url('../font/playfair-display-v25-latin-500italic.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  font-family: "PlayfairDisplay-MediumItalic";
+  src: url("../font/playfair-display-v25-latin-500italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/playfair-display-v25-latin-500italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/playfair-display-v25-latin-500italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../font/playfair-display-v25-latin-500italic.woff") format("woff"),
+    /* Modern Browsers */
+      url("../font/playfair-display-v25-latin-500italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/playfair-display-v25-latin-500italic.svg#PlayfairDisplay")
+      format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-regular - latin */
 @font-face {
-	font-family: 'OpenSans-Regular';
-	src: url('../font/open-sans-v27-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/open-sans-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/open-sans-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/open-sans-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../font/open-sans-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/open-sans-v27-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  font-family: "OpenSans-Regular";
+  src: url("../font/open-sans-v27-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/open-sans-v27-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/open-sans-v27-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../font/open-sans-v27-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/open-sans-v27-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/open-sans-v27-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-600 - latin */
 @font-face {
-	font-family: 'OpenSans-SemiBold';
-	src: url('../font/open-sans-v27-latin-600.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/open-sans-v27-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/open-sans-v27-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/open-sans-v27-latin-600.woff') format('woff'), /* Modern Browsers */
-		url('../font/open-sans-v27-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/open-sans-v27-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+  font-family: "OpenSans-SemiBold";
+  src: url("../font/open-sans-v27-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/open-sans-v27-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/open-sans-v27-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/open-sans-v27-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/open-sans-v27-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/open-sans-v27-latin-600.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-500 - latin */
 @font-face {
-	font-family: 'OpenSans-Medium';
-	src: url('../font/open-sans-v27-latin-500.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/open-sans-v27-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/open-sans-v27-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/open-sans-v27-latin-500.woff') format('woff'), /* Modern Browsers */
-		url('../font/open-sans-v27-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/open-sans-v27-latin-500.svg#OpenSans') format('svg'); /* Legacy iOS */
+  font-family: "OpenSans-Medium";
+  src: url("../font/open-sans-v27-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/open-sans-v27-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/open-sans-v27-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/open-sans-v27-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/open-sans-v27-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../font/open-sans-v27-latin-500.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* cinzel-500 - latin */
 @font-face {
-	font-family: 'Cinzel-Medium';
-	src: url('../font/cinzel-v11-latin-500.eot'); /* IE9 Compat Modes */
-	src: local(''),
-		url('../font/cinzel-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../font/cinzel-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../font/cinzel-v11-latin-500.woff') format('woff'), /* Modern Browsers */
-		url('../font/cinzel-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../font/cinzel-v11-latin-500.svg#Cinzel') format('svg'); /* Legacy iOS */
+  font-family: "Cinzel-Medium";
+  src: url("../font/cinzel-v11-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../font/cinzel-v11-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/cinzel-v11-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/cinzel-v11-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../font/cinzel-v11-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../font/cinzel-v11-latin-500.svg#Cinzel")
+      format("svg"); /* Legacy iOS */
 }
 
-/*----------------------------------- FONTFACE -----------------------------------------*/
+/* FONTFACE END */
 
-body { font-family: "OpenSans-Medium"; color: #222; }
+body {
+  font-family: "OpenSans-Medium";
+  color: #222;
+}
 
-section { overflow: hidden; }
+section {
+  overflow: hidden;
+}
 
-footer { overflow: hidden; }
+footer {
+  overflow: hidden;
+}
 
-div.inner_wrap { position: relative; width: 100%; max-width: 1132px; margin: 0 auto; }
+div.inner_wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
 
-div.inner_wrap_02 { position: relative; width: 100%; max-width: 1156px; margin: 0 auto; }
+div.inner_wrap_02 {
+  position: relative;
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+}
 
-div.rel { position: relative; width: 100%; height: 100%; }
+div.rel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-.title_h2_pre { margin-bottom: 0.375em; color: #8c6239; font-family: "OpenSans-Regular"; font-size: 1em; }
+.title_h2_pre {
+  margin-bottom: 0.375em;
+  color: #8c6239;
+  font-family: "OpenSans-Regular";
+  font-size: 1em;
+}
 
-h2 { position: relative; padding: 0.2em 0; color: #222; font-family: "PlayfairDisplay-Regular"; font-size: 2.25em; line-height: 1.1; }
+h2 {
+  position: relative;
+  padding: 0.2em 0;
+  color: #222;
+  font-family: "PlayfairDisplay-Regular";
+  font-size: 2.25em;
+  line-height: 1.1;
+}
 
-h2::after { content:""; display: inline-block; position: absolute; left:0; bottom: 0; width: 80px; height: 1px; background: #222; }
+h2::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background: #222;
+}
 
-.pagination { text-align: center; }
+.pagination {
+  text-align: center;
+}
 
-.pagination > button.pages { display: inline-block; margin: 0 10px; padding: 20px 0; }
-.pagination > button.pages > span { display: block; position: relative; width: 100%; height: 5px; background: #fff; }
-.pagination > button.pages > span::after { content:""; display: block; position: absolute; left: 50%; top: 0; 
-width: 0; height: 100%; background: #603814; transform: translateX(-50%);}
-.pagination > button.pages:hover > span::after { width: 100%; transition: width 0.2s ease-in; }
-.pagination > button.pages.active > span::after { width: 100%; transition: width 0.2s ease-in; }
+.pagination > button.pages {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
 
-.dir_btns { display: inline-block; vertical-align: middle; }
+.pagination > button.pages:hover {
+  background-color: peru;
+}
 
-.dir_btns[class ~= "prev"] { background: url("../images/img_common_btn_prev.png") no-repeat; background-size: 100%; }
-.dir_btns[class ~= "next"] { background: url("../images/img_common_btn_next.png") no-repeat; background-size: 100%; }
+.pagination > button.active {
+  background-color: peru;
+}
 
-.btn_common { display: inline-block; position: relative; font-family: "PlayfairDisplay-MediumItalic"; }
-.btn_common[class ~="_M"] { font-size : 1.5em; }
-.btn_common[class ~="_S"] { font-size : 1em; }
+.dir_btns {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-.btn_common > span { display: inline-block; position: relative; z-index:1; margin-right: 0.5em; padding: 0.2em 0; vertical-align: middle; }
-.btn_common[class ~="_BK"] > span { color: #222; }
-.btn_common[class ~="_W"] > span { color: #fff; }
+.dir_btns[class~="prev"] {
+  background: url("../images/img_common_btn_prev.png") no-repeat;
+  background-size: 100%;
+}
+.dir_btns[class~="next"] {
+  background: url("../images/img_common_btn_next.png") no-repeat;
+  background-size: 100%;
+}
 
-.btn_common > span::after { content:""; display: inline-block; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #222; }
-.btn_common[class ~="_BK"] > span::after { background: #222; }
-.btn_common[class ~="_W"] > span::after { background: #fff; }
+.btn_common {
+  display: inline-block;
+  position: relative;
+  font-family: "PlayfairDisplay-MediumItalic";
+}
+.btn_common[class~="_M"] {
+  font-size: 1.5em;
+}
+.btn_common[class~="_S"] {
+  font-size: 1em;
+}
 
-.btn_common::after { content:""; display: inline-block; width: 1.6em; height: 1.6em; vertical-align: middle; }
-.btn_common[class ~="_BK"]::after { background: url("../images/img_common_btn_black.png") no-repeat; background-size: 100%; }
-.btn_common[class ~="_W"]::after { background: url("../images/img_common_btn_white.png") no-repeat; background-size: 100%;}
+.btn_common > span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-right: 0.5em;
+  padding: 0.2em 0;
+  vertical-align: middle;
+}
+.btn_common[class~="_BK"] > span {
+  color: #222;
+}
+.btn_common[class~="_W"] > span {
+  color: #fff;
+}
 
-.btn_common:hover > span::after { width: 100%; transition: width 0.2s ease-in; }
-.btn_common[class ~="_BK"]:hover::after { background: url("../images/img_common_btn_black_H.png") no-repeat; background-size: 100%; transition: background 0s 0.2s; }
-.btn_common[class ~="_W"]:hover::after { background: url("../images/img_common_btn_white_H.png") no-repeat; background-size: 100%; transition: background 0s 0.2s; }
+.btn_common > span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #222;
+}
+.btn_common[class~="_BK"] > span::after {
+  background: #222;
+}
+.btn_common[class~="_W"] > span::after {
+  background: #fff;
+}
 
+.btn_common::after {
+  content: "";
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  vertical-align: middle;
+}
+.btn_common[class~="_BK"]::after {
+  background: url("../images/img_common_btn_black.png") no-repeat;
+  background-size: 100%;
+}
+.btn_common[class~="_W"]::after {
+  background: url("../images/img_common_btn_white.png") no-repeat;
+  background-size: 100%;
+}
 
+.btn_common:hover > span::after {
+  width: 100%;
+  transition: width 0.2s ease-in;
+}
+.btn_common[class~="_BK"]:hover::after {
+  background: url("../images/img_common_btn_black_H.png") no-repeat;
+  background-size: 100%;
+  transition: background 0s 0.2s;
+}
+.btn_common[class~="_W"]:hover::after {
+  background: url("../images/img_common_btn_white_H.png") no-repeat;
+  background-size: 100%;
+  transition: background 0s 0.2s;
+}
 
-
-/* ===========mobile(start)============== */
+/* MOBILE START */
 @media screen and (max-width: 767px) {
+  .title_h2_pre {
+    margin-bottom: 0;
+    color: #8c6239;
+    font-family: "OpenSans-Regular";
+    font-size: 0.75em;
+  }
 
+  h2 {
+    position: relative;
+    padding: 0.4em 0;
+    color: #222;
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 1.5em;
+    line-height: 1.1;
+  }
 
+  .dir_btns {
+    width: 2.375em;
+    height: 0.625em;
+  }
+  .dir_btns[class~="prev"] {
+    margin-right: 2.375em;
+  }
+  .dir_btns[class~="next"] {
+    margin-right: 0;
+  }
 
-	/*5vw를 기준으로 잡음*/
-	.title_h2_pre { margin-bottom: 0; color: #8c6239; font-family: "OpenSans-Regular"; font-size: 0.75em; }
+  .btn_common[class~="_M"] {
+    font-size: 1.25em;
+  }
+  .btn_common[class~="_S"] {
+    font-size: 1em;
+  }
 
-	h2 { position: relative; padding: 0.4em 0; color: #222; font-family: "PlayfairDisplay-Regular"; font-size: 1.5em; line-height: 1.1; }
+  header {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+  }
+  header.bg {
+    background: rgba(238, 238, 238, 0.7);
+  }
+  header h1 {
+    position: absolute;
+    left: 5vw;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+  }
+  header h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/img_header_logo_M.png") no-repeat;
+    background-size: 100%;
+  }
+  header button.btn_menu {
+    display: block;
+    position: fixed;
+    right: 5vw;
+    top: 12px;
+    z-index: 110;
+    width: 26px;
+    height: 26px;
+    background: url("../images/img_common_btn_menu.png") no-repeat;
+    background-size: cover;
+  }
+  header.on button.btn_menu {
+    background: url("../images/img_common_btn_close.png") no-repeat;
+    background-size: cover;
+  }
 
+  header nav {
+    display: block;
+    position: fixed;
+    left: 100%;
+    top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
+    z-index: 105;
+    width: 100vw;
+    height: 100vh;
+    padding: 20vh 8vw 10vh 8vw;
+    background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right
+      bottom;
+    background-size: 75%;
+    transform: translateX(0%);
+    transition: transform 0.1s ease-in-out;
+  }
+  /*하단에 패딩을 넣는 이유: 다 펼쳐진 상황을 가정했을때 배경의 이미지와 겹치지 않고 스크롤로 내리게 할 수 있기 위해서*/
 
-	.dir_btns { width: 2.375em; height: 0.625em; }
-	.dir_btns[class ~= "prev"] { margin-right: 2.375em; }
-	.dir_btns[class ~= "next"] { margin-right: 0; }
+  header.on nav {
+    transform: translateX(-100%);
+  }
 
-	.btn_common[class ~="_M"] { font-size : 1.25em; }
-	.btn_common[class ~="_S"] { font-size : 1em; }
+  header nav > ul {
+    overflow-y: scroll;
+    height: 100%;
+    padding-left: 9vw;
+  }
+  header nav > ul > li > button.btn_sub {
+    display: inline-block;
+    padding: 0.5em 0;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 1.25em;
+  } /*padding을 줘서 닫혀있을때 간격을 생성함. margin으로 주면 서브가 열릴때 계산이 복잡해짐. underline을 버튼이 아닌 버튼 안에 있는 span에 넣겠다*/
+  header nav > ul > li > button.btn_sub > span {
+    padding: 0.1em 0;
+  }
+  header nav > ul > li > button.btn_sub.active > span {
+    border-bottom: 1px solid #222;
+  }
+  header nav > ul > li > ul {
+    display: none;
+    padding: 0 0 0 1.25em;
+  } /*하단에 padding 넣는 이유: 혹시라도 ul이 늘어났을 때 하단과 겹칠까봐*/
+  header nav > ul > li > button.btn_sub.active + ul {
+    display: block;
+  }
+  header nav > ul > li > ul > li > a {
+    display: block;
+    padding: 0.6875em 0;
+    color: #444;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 1em;
+  }
 
+  header div.utility {
+    position: absolute;
+    right: 18.75vw;
+    top: 12px;
+  }
+  header div.utility::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 300%;
+    height: 2px;
+    background: #222;
+  }
 
-	header { overflow: hidden; position: fixed; left:0; top:0; z-index: 100; width: 100%; height: 50px; }
-	header.bg { background: rgba(238, 238, 238, 0.7); }
-	header h1 { position: absolute; left: 5vw; top: 12px; width: 26px; height: 26px; } 
-	header h1 > a { display: block; width: 100%; height: 100%; background: url("../images/img_header_logo_M.png") no-repeat; background-size: 100%; /*커버줘도됨*/}
-	header button.btn_menu { display: block; position: fixed; right: 5vw; top: 12px; z-index: 110; width: 26px; height: 26px; background: url("../images/img_common_btn_menu.png") no-repeat; background-size: cover;}
-	header.on button.btn_menu { background: url("../images/img_common_btn_close.png") no-repeat; background-size: cover;}
+  header div.utility div.lang_wrap {
+    display: inline-block;
+    position: relative;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.select_lang > span.select_value {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../images/img_common_flag_usa.png") no-repeat;
+    background-size: 100%;
+    text-indent: -999999em;
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.select_lang > button.btn_expand {
+    width: 14px;
+    height: 8px;
+    margin-left: 10px;
+    background: url("../images/img_common_btn_country.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.option_wrap {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    padding: 5px;
+    border: 1px solid #222;
+    background: #cfa972;
+  }
+  header div.utility div.lang_wrap[class~="active"] > div.option_wrap {
+    display: block;
+  }
+  header div.utility div.lang_wrap > div.option_wrap ul {
+    display: inline-block;
+    white-space: nowrap;
+  } /*li 개수 늘면 그것에 맞춰서 넓이 높이 변하게 하려고 linline-block; 1. white-space: no-wrap 속성은 영역 내의 문장이 길 때 자동으로 다음줄로 내려가는 것을 제거합니다. 2. overflow: hidden 속성은 영역의 넘치는 요소를 숨겨줍니다.참고: https://deeplify.dev/front-end/markup/text-ellipsis, 부모가 넓이값을 갖지 못하면 float할수 없음-> ul을 td라고 생각해서 처리하기. */
+  header div.utility div.lang_wrap > div.option_wrap li {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.option_wrap button {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  header div.utility div.option_wrap li:nth-child(1) button {
+    background: url("../images/img_common_flag_usa.png") no-repeat;
+    background-size: 100%;
+  }
+  header div.utility div.option_wrap li:nth-child(2) button {
+    background: url("../images/img_common_flag_japan.png") no-repeat;
+    background-size: 100%;
+  }
+  header div.utility div.option_wrap li:nth-child(3) button {
+    background: url("../images/img_common_flag_france.png") no-repeat;
+    background-size: 100%;
+  }
+  header div.utility div.option_wrap button > span {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
+  header div.utility .util_btns {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility .btn_login {
+    background: url("../images/img_common_btn_log.png") no-repeat;
+    background-size: cover;
+  }
+  header div.utility .btn_cart {
+    background: url("../images/img_common_btn_cart.png") no-repeat;
+    background-size: cover;
+  }
 
-	header nav { display: block; position: fixed; left: 100%; top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
-	z-index: 105; width: 100vw; height: 100vh; padding: 20vh 8vw 10vh 8vw; background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right bottom; background-size: 75%; transform: translateX(0%); transition: transform 0.1s ease-in-out; }
-	/*하단에 패딩을 넣는 이유: 다 펼쳐진 상황을 가정했을때 배경의 이미지와 겹치지 않고 스크롤로 내리게 할 수 있기 위해서*/
-	
-	header.on nav { transform: translateX(-100%); }
-	
-	header nav > ul { overflow-y: scroll; height: 100%; padding-left: 9vw; }
-	header nav > ul > li > button.btn_sub { display: inline-block; padding: 0.5em 0; font-family: "PlayfairDisplay-Medium";
-	font-size: 1.25em; }/*padding을 줘서 닫혀있을때 간격을 생성함. margin으로 주면 서브가 열릴때 계산이 복잡해짐. underline을 버튼이 아닌 버튼 안에 있는 span에 넣겠다*/
-	header nav > ul > li > button.btn_sub > span { padding: 0.1em 0; }
-	header nav > ul > li > button.btn_sub.active > span { border-bottom: 1px solid #222; }
-	header nav > ul > li > ul { display: none; padding: 0 0 0 1.25em; }/*하단에 padding 넣는 이유: 혹시라도 ul이 늘어났을 때 하단과 겹칠까봐*/
-	header nav > ul > li > button.btn_sub.active + ul { display: block; }
-	header nav > ul > li > ul > li > a { display: block; padding: 0.6875em 0; color: #444; font-family: "PlayfairDisplay-Medium";
-	font-size: 1em; }
+  /*모바일,테블릿은 inner_wrap이 100%, 각각의 섹션에서 패딩으로 좌우를 넣어줌*/
+  footer {
+    padding: 20px 5vw;
+    background: #ede6d6;
+  }
+  footer div.logo_wrap {
+    width: 110px;
+    height: 42px;
+    margin: 0 auto 0.8em auto;
+  }
+  footer div.logo_wrap > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
+  footer div.info_wraps {
+    margin-bottom: 0.8em;
+    text-align: center;
+  }
+  footer div.info_wraps > p.title {
+    position: relative;
+    border-bottom: 1px solid #222;
+    font-size: 0.875em;
+    padding: 0.4em 0;
+  }
+  footer div.info_wraps > ul {
+    padding: 0.5em 0;
+  }
+  footer div.info_wraps > ul > li {
+    line-height: 1.4;
+  }
+  footer div.info_wraps > ul > li > span {
+    display: block;
+    font-size: 0.75em;
+  }
+  footer div.info_wraps > ul > li > a {
+    display: inline-block;
+    font-size: 0.75em;
+  } /*a inline-block 처리 이유: block처리하면 넓게 넓이를 가지게 되면서 여백부분에도 클릭이 가능해지기 때문에, inline-block으로 처리.*/
+  footer div.info_wraps > ul > li > form.form_mail {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.1em 0.4em 0.3em 0.4em;
+    background: #fff;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="email"] {
+    width: 40vw;
+    margin-right: 0.5em;
+    border: none;
+    font-size: 0.75em;
+    line-height: 1.8;
+    vertical-align: middle;
+    outline: none;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="submit"] {
+    padding: 0.4em 1em 0.3em 1em;
+    border: none;
+    background: #bbb;
+    color: #222;
+    font-size: 0.6875em;
+    vertical-align: middle;
+  }
 
-	header div.utility { position: absolute; right: 18.75vw; top: 12px; }
-	header div.utility::before { content:""; display: block; position: absolute; left: 0; bottom: -22px; width: 300%; height: 2px; background: #222; }
-
-	header div.utility div.lang_wrap { display: inline-block; position: relative; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.select_lang > span.select_value { display: inline-block; width: 26px; height: 26px; background: url("../images/img_common_flag_usa.png") no-repeat; background-size: 100%; text-indent: -999999em; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.select_lang > button.btn_expand { width: 14px; height: 8px; margin-left: 10px; background: url("../images/img_common_btn_country.png") no-repeat; background-size: 100%; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.option_wrap { display: none; position: absolute; top: 120%; left: 0; padding: 5px; border: 1px solid #222; background: #cfa972; }
-	header div.utility div.lang_wrap[class ~= "active"] > div.option_wrap { display: block; }
-	header div.utility div.lang_wrap > div.option_wrap ul { display: inline-block; white-space: nowrap; }/*li 개수 늘면 그것에 맞춰서 넓이 높이 변하게 하려고 linline-block; 1. white-space: no-wrap 속성은 영역 내의 문장이 길 때 자동으로 다음줄로 내려가는 것을 제거합니다. 2. overflow: hidden 속성은 영역의 넘치는 요소를 숨겨줍니다.참고: https://deeplify.dev/front-end/markup/text-ellipsis, 부모가 넓이값을 갖지 못하면 float할수 없음-> ul을 td라고 생각해서 처리하기. */
-	header div.utility div.lang_wrap > div.option_wrap li { display: inline-block; width: 26px; height: 26px; margin: 0 5px; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.option_wrap button { display: inline-block; width: 100%; height: 100%; vertical-align: middle;}
-	header div.utility div.option_wrap li:nth-child(1) button { background: url("../images/img_common_flag_usa.png") no-repeat; background-size: 100%; }
-	header div.utility div.option_wrap li:nth-child(2) button { background: url("../images/img_common_flag_japan.png") no-repeat; background-size: 100%; }
-	header div.utility div.option_wrap li:nth-child(3) button { background: url("../images/img_common_flag_france.png") no-repeat; background-size: 100%; }
-	header div.utility div.option_wrap button > span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
-
-	header div.utility .util_btns { display: inline-block; width: 26px; height: 26px; margin-left: 20px; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility .btn_login { background: url("../images/img_common_btn_log.png") no-repeat; background-size: cover; }
-	header div.utility .btn_cart  { background: url("../images/img_common_btn_cart.png") no-repeat; background-size: cover; }
-
- /*모바일,테블릿은 inner_wrap이 100%, 각각의 섹션에서 패딩으로 좌우를 넣어줌*/
-	footer { padding: 20px 5vw; background: #ede6d6; }
-	footer div.logo_wrap { width: 110px; height: 42px; margin: 0 auto 0.8em auto; }
-	footer div.logo_wrap > img { display: block; width: 100%; height: 100%; object-fit: contain; }
-
-	footer div.info_wraps { margin-bottom: 0.8em; text-align: center; }
-	footer div.info_wraps > p.title { position: relative; border-bottom: 1px solid #222; font-size: 0.875em; padding: 0.4em 0; }
-	footer div.info_wraps > ul { padding: 0.5em 0; }
-	footer div.info_wraps > ul > li { line-height: 1.4; }
-	footer div.info_wraps > ul > li > span { display: block; font-size: 0.75em; }
-	footer div.info_wraps > ul > li > a { display: inline-block; font-size: 0.75em; } /*a inline-block 처리 이유: block처리하면 넓게 넓이를 가지게 되면서 여백부분에도 클릭이 가능해지기 때문에, inline-block으로 처리.*/
-	footer div.info_wraps > ul > li > form.form_mail { display: inline-block; margin-top: 0.5em; padding: 0.1em 0.4em 0.3em 0.4em; 
-	background: #fff; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "email"] { width: 40vw; margin-right: 0.5em; border: none; font-size: 0.75em; line-height: 1.8; vertical-align: middle; outline: none; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "submit"] { padding: 0.4em 1em 0.3em 1em; border: none; background: #bbb; color: #222; font-size: 0.6875em; vertical-align: middle; }
-
-	footer p.copy { font-size: 0.75em; text-align: center; }
-
-
-
-
+  footer p.copy {
+    font-size: 0.75em;
+    text-align: center;
+  }
 }
 
-/* ===========mobile(end)============== */
+/* MOBILE END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===========tablet(start)============== */
+/* TABLET START */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*좌우 margin 기준: 25px (3.255208vw)*/
 
+  .dir_btns {
+    width: 2.375em;
+    height: 0.625em;
+  }
+  .dir_btns[class~="prev"] {
+    margin-right: 2.375em;
+  }
+  .dir_btns[class~="next"] {
+    margin-right: 0em;
+  }
 
+  header {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+  }
+  header.bg {
+    background: rgba(238, 238, 238, 0.7);
+  }
+  header h1 {
+    position: absolute;
+    left: 3.255208vw;
+    top: 25px;
+    width: 128px;
+    height: 50px;
+  }
+  header h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/img_header_logo_D.png") no-repeat;
+    background-size: 100%; /*커버줘도됨*/
+  }
+  header button.btn_menu {
+    display: block;
+    position: fixed;
+    right: 3.255208vw;
+    top: 29px;
+    z-index: 110;
+    width: 36px;
+    height: 36px;
+    background: url("../images/img_common_btn_menu.png") no-repeat;
+    background-size: cover;
+  }
+  header.on button.btn_menu {
+    background: url("../images/img_common_btn_close.png") no-repeat;
+    background-size: cover;
+  }
 
-	/*좌우 margin 기준: 25px (3.255208vw)*/
+  header nav {
+    display: block;
+    position: fixed;
+    left: 100%;
+    top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
+    z-index: 105;
+    width: 100vw;
+    height: 100vh;
+    padding: 24vh 8vw 0 8vw;
+    background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right
+      bottom;
+    background-size: 65%;
+    transform: translateX(0%);
+    transition: transform 0.1s ease-in-out;
+  }
 
-	.dir_btns { width: 2.375em; height: 0.625em; }
-	.dir_btns[class ~= "prev"] { margin-right: 2.375em; }
-	.dir_btns[class ~= "next"] { margin-right: 0em; }
+  header.on nav {
+    transform: translateX(-100%);
+  }
 
+  header nav > ul {
+    text-align: center;
+  }
+  header nav > ul > li {
+    float: left;
+    width: 50%;
+    height: 28.32vh;
+    padding-left: 9vw; /*글씨가 늘어나도 옆이랑 히팅은 나지않음.*/
+    text-align: left;
+  }
+  header nav > ul > li > button.btn_sub {
+    display: inline-block;
+    padding: 0.1em 0;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 1.5em;
+  } /*24px고정으로 가려고 vw에서 em으로 단위변경*/
+  header nav > ul > li > ul {
+    padding: 0.875em 0 0.875em 1.25em;
+  } /*하단에 padding 넣는 이유: 혹시라도 ul이 늘어났을 때 하단과 겹칠까봐*/
+  header nav > ul > li > ul > li > a {
+    display: block;
+    padding: 0.6875em 0;
+    color: #444;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 1em;
+  }
 
-	header { overflow: hidden; position: fixed; left:0; top:0; z-index: 100; width: 100%; height: 100px; }
-	header.bg { background: rgba(238, 238, 238, 0.7); }
-	header h1 { position: absolute; left: 3.255208vw; top: 25px; width: 128px; height: 50px; } 
-	header h1 > a { display: block; width: 100%; height: 100%; background: url("../images/img_header_logo_D.png") no-repeat; background-size: 100%; /*커버줘도됨*/}
-	header button.btn_menu { display: block; position: fixed; right: 3.255208vw; top: 29px; z-index: 110; width: 36px; height: 36px; background: url("../images/img_common_btn_menu.png") no-repeat; background-size: cover;}
-	header.on button.btn_menu { background: url("../images/img_common_btn_close.png") no-repeat; background-size: cover;}
+  header div.utility {
+    position: absolute;
+    right: 11.71875vw;
+    top: 29px;
+  }
+  header div.utility::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 300%;
+    height: 2px;
+    background: #222;
+  }
 
+  header div.utility div.lang_wrap {
+    display: inline-block;
+    position: relative;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.select_lang {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+  }
+  header div.utility div.lang_wrap > div.select_lang > button.btn_expand {
+    width: 14px;
+    height: 8px;
+    margin-left: 10px;
+    background: url("../images/img_common_btn_country.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.option_wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 0 10px;
+    border: 1px solid #222;
+    background: #ede6d6;
+    transform: translateX(-50%);
+  }
+  header div.utility div.lang_wrap[class~="active"] > div.option_wrap {
+    display: block;
+  }
+  header div.utility div.lang_wrap > div.option_wrap li {
+    border-bottom: 1px solid #222;
+    text-align: center;
+  }
+  header div.utility div.lang_wrap > div.option_wrap li:last-child {
+    border-bottom: none;
+  }
+  header div.utility div.lang_wrap > div.option_wrap button {
+    padding: 5px 0;
+    color: #222;
+  }
 
-	header nav { display: block; position: fixed; left: 100%; top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
-	z-index: 105; width: 100vw; height: 100vh; padding: 24vh 8vw 0 8vw; background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right bottom; background-size: 65%; transform: translateX(0%); transition: transform 0.1s ease-in-out; }
-	
-	header.on nav { transform: translateX(-100%); }
-	
-	header nav > ul { text-align: center; }
-	header nav > ul > li { float: left; width: 50%; height: 28.32vh; padding-left: 9vw;/*글씨가 늘어나도 옆이랑 히팅은 나지않음.*/ text-align: left; }
-	header nav > ul > li > button.btn_sub { display: inline-block; padding: 0.1em 0; font-family: "PlayfairDisplay-Medium";
-	font-size: 1.5em; }/*24px고정으로 가려고 vw에서 em으로 단위변경*/
-	header nav > ul > li > ul { padding: 0.875em 0 0.875em 1.25em; }/*하단에 padding 넣는 이유: 혹시라도 ul이 늘어났을 때 하단과 겹칠까봐*/
-	header nav > ul > li > ul > li > a { display: block; padding: 0.6875em 0; color: #444; font-family: "PlayfairDisplay-Medium";
-	font-size: 1em; }
+  header div.utility .util_btns {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility .btn_login {
+    background: url("../images/img_common_btn_log.png") no-repeat;
+    background-size: cover;
+  }
+  header div.utility .btn_cart {
+    background: url("../images/img_common_btn_cart.png") no-repeat;
+    background-size: cover;
+  }
 
+  /*모바일,테블릿은 inner_wrap이 100%, 각각의 섹션에서 패딩으로 좌우를 넣어줌*/
+  footer {
+    padding: 20px 0;
+    background: #ede6d6;
+  }
+  footer div.logo_wrap {
+    position: absolute;
+    left: 3.255208vw;
+    bottom: 55px;
+    width: 128px;
+    height: 50px;
+  }
+  footer div.logo_wrap > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-	header div.utility { position: absolute; right: 11.71875vw; top: 29px; }
-	header div.utility::before { content:""; display: block; position: absolute; left: 0; bottom: -30px; width: 300%; height: 2px; background: #222; }
+  footer div.info_wraps {
+    float: left;
+    width: 50%;
+  }
+  footer div.info_wraps:nth-last-of-type(1) {
+    float: right;
+    margin-top: 20px;
+    padding-left: 3.255208vw;
+  }
+  footer div.info_wraps > p.title {
+    position: relative;
+    border-bottom: 1px solid #222;
+    font-size: 1.125em;
+    padding: 0.4em 0 0.4em 3.255208vw;
+  }
+  footer div.info_wraps[class~="right_bdr"] > p.title {
+    padding-left: 0;
+  }
+  footer div.info_wraps > ul {
+    padding: 0.5em 0 0 3.255208vw;
+  }
+  footer div.info_wraps[class~="right_bdr"] > ul {
+    padding-left: 0;
+  }
+  footer div.info_wraps > ul > li {
+    line-height: 2;
+  }
+  footer div.info_wraps > ul > li > span {
+    display: block;
+  }
+  footer div.info_wraps > ul > li > form.form_mail {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.1em 0.4em 0.3em 0.4em;
+    background: #fff;
+    line-height: 2;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="email"] {
+    width: 190px;
+    margin-right: 0.5em;
+    border: none;
+    font-size: 1em;
+    line-height: 1.8;
+    vertical-align: middle;
+    outline: none;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="submit"] {
+    padding: 0.4em 1em 0.3em 1em;
+    border: none;
+    background: #bbb;
+    color: #222;
+    vertical-align: middle;
+  }
 
-	header div.utility div.lang_wrap { display: inline-block; position: relative; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.select_lang { display: inline-block; height: 36px; line-height: 36px; }
-	header div.utility div.lang_wrap > div.select_lang > button.btn_expand { width: 14px; height: 8px; margin-left: 10px; background: url("../images/img_common_btn_country.png") no-repeat; background-size: 100%; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.option_wrap { display: none; position: absolute; top: 100%; left: 50%; padding: 0 10px; border: 1px solid #222; background: #ede6d6; transform: translateX(-50%);}
-	header div.utility div.lang_wrap[class ~= "active"] > div.option_wrap { display: block; }
-	header div.utility div.lang_wrap > div.option_wrap li { border-bottom: 1px solid #222; text-align: center;}
-	header div.utility div.lang_wrap > div.option_wrap li:last-child { border-bottom: none; }
-	header div.utility div.lang_wrap > div.option_wrap button { padding: 5px 0; color: #222; }
-
-	header div.utility .util_btns { display: inline-block; width: 36px; height: 36px; margin-left: 20px; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility .btn_login { background: url("../images/img_common_btn_log.png") no-repeat; background-size: cover; }
-	header div.utility .btn_cart  { background: url("../images/img_common_btn_cart.png") no-repeat; background-size: cover; }
-
- /*모바일,테블릿은 inner_wrap이 100%, 각각의 섹션에서 패딩으로 좌우를 넣어줌*/
-	footer { padding: 20px 0; background: #ede6d6; }
-	footer div.logo_wrap { position: absolute; left: 3.255208vw; bottom: 55px; width: 128px; height: 50px; }
-	footer div.logo_wrap > img { display: block; width: 100%; height: 100%; object-fit: contain; }
-
-	footer div.info_wraps { float: left; width: 50%; }
-	footer div.info_wraps:nth-last-of-type(1) { float: right; margin-top: 20px; padding-left: 3.255208vw; }
-	footer div.info_wraps > p.title { position: relative; border-bottom: 1px solid #222; font-size: 1.125em; padding: 0.4em 0 0.4em 3.255208vw; }
-	footer div.info_wraps[class ~= "right_bdr"] > p.title { padding-left: 0; }
-	footer div.info_wraps > ul { padding: 0.5em 0 0 3.255208vw; }
-	footer div.info_wraps[class ~= "right_bdr"] > ul { padding-left: 0; }
-	footer div.info_wraps > ul > li { line-height: 2; }
-	footer div.info_wraps > ul > li > span { display: block; }
-	footer div.info_wraps > ul > li > form.form_mail { display: inline-block; margin-top: 0.5em; padding: 0.1em 0.4em 0.3em 0.4em; 
-	background: #fff; line-height: 2; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "email"] { width: 190px; margin-right: 0.5em; border: none; font-size: 1em; line-height: 1.8; vertical-align: middle; outline: none; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "submit"] { padding: 0.4em 1em 0.3em 1em; border: none; background: #bbb; color: #222; vertical-align: middle; }
-
-	footer p.copy { clear: both; position: absolute; left: 3.255208vw; bottom: 0; text-align: left; }
-
-
-
-
-
-
+  footer p.copy {
+    clear: both;
+    position: absolute;
+    left: 3.255208vw;
+    bottom: 0;
+    text-align: left;
+  }
 }
 
+/* TABLET END */
 
-/* ===========tablet(end)============== */
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!! FEELING GRAPE !!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-/* ===========desktop(start)============== */
+/* DESKTOP START */
 @media screen and (min-width: 1025px) {
+  .dir_btns {
+    width: 3.125em;
+    height: 0.75em;
+  }
+  .dir_btns[class~="prev"] {
+    margin-right: 3.125em;
+  }
+  .dir_btns[class~="next"] {
+    margin-right: 3.125em;
+  }
 
+  header {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+  }
+  header::before {
+    content: "";
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  header.on::before {
+    display: block;
+  }
 
+  header.bg {
+    background: rgba(238, 238, 238, 0.7);
+  }
+  header h1 {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    width: 158px;
+    height: 60px;
+  }
+  header h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/img_header_logo_D.png") no-repeat;
+    background-size: 100%; /*커버줘도됨*/
+  }
 
-	.dir_btns { width: 3.125em; height: 0.75em; }
-	.dir_btns[class ~= "prev"] { margin-right: 3.125em; }
-	.dir_btns[class ~= "next"] { margin-right: 3.125em; }
+  header button.btn_menu {
+    display: block;
+    position: fixed;
+    right: 70px;
+    top: 32px;
+    z-index: 110;
+    width: 36px;
+    height: 36px;
+    background: url("../images/img_common_btn_menu.png") no-repeat;
+    background-size: cover;
+  }
+  header.on button.btn_menu {
+    background: url("../images/img_common_btn_close.png") no-repeat;
+    background-size: cover;
+  }
 
+  header nav {
+    display: block;
+    position: fixed;
+    left: 100%;
+    top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
+    z-index: 105;
+    width: 64.583333%;
+    height: 100vh;
+    padding: 26vh 0 0 0;
+    background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right
+      bottom;
+    background-size: 60%;
+    transform: translateX(0%);
+    transition: transform 0.1s ease-in-out;
+  }
 
-	header { overflow: hidden; position: fixed; left:0; top:0; z-index: 100; width: 100%; height: 100px; }
-	header::before { content:""; display: none; position: fixed; left:0; top: 0; z-index: 101; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.65); }
-	header.on::before { display: block; }
-	
-	header.bg { background: rgba(238, 238, 238, 0.7); }
-	header h1 { position: absolute; left: 70px; top: 20px; width: 158px; height: 60px; } 
-	header h1 > a { display: block; width: 100%; height: 100%; background: url("../images/img_header_logo_D.png") no-repeat; background-size: 100%; /*커버줘도됨*/}
+  header.on nav {
+    transform: translateX(-100%);
+  }
 
-	header button.btn_menu { display: block; position: fixed; right: 70px; top: 32px; z-index: 110; width: 36px; height: 36px; 
-	background: url("../images/img_common_btn_menu.png") no-repeat; background-size: cover;}
-	header.on button.btn_menu { background: url("../images/img_common_btn_close.png") no-repeat; background-size: cover;}
+  header nav > ul {
+    text-align: center;
+  }
+  header nav > ul > li {
+    display: inline-block;
+    padding: 0 2.604166vw;
+    text-align: left;
+    vertical-align: top;
+  }
+  header nav > ul > li > button.btn_sub {
+    display: inline-block;
+    padding: 0.1em 0;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 1.25vw;
+  }
+  header nav > ul > li:hover > button.btn_sub {
+    margin-bottom: -1px;
+    border-bottom: 1px solid #222;
+    color: #000;
+  }
+  header nav > ul > li > ul {
+    padding: 0.875em 0;
+  }
+  header nav > ul > li > ul > li > a {
+    display: block;
+    padding: 0.875em 0;
+    color: #444;
+    font-family: "PlayfairDisplay-Medium";
+    font-size: 0.83vw;
+  }
+  header nav > ul > li > ul > li > a:hover {
+    color: #000;
+    font-weight: bold;
+  }
 
+  header div.utility {
+    position: absolute;
+    right: 130px;
+    top: 32px;
+  }
+  header div.utility::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 300%;
+    height: 2px;
+    background: #222;
+  }
 
-	header nav { display: block; position: fixed; left: 100%; top: 0; /*right:0으로 맞추지 않고, 미리 밖으로 빼놓는 방식임*/
-	z-index: 105; width: 64.583333%; height: 100vh;  padding: 26vh 0 0 0;
-	background: #ede6d6 url("../images/img_common_menu_bg.png") no-repeat right bottom; background-size: 60%; 
-	transform: translateX(0%); transition: transform 0.1s ease-in-out; }
-	
-	header.on nav { transform: translateX(-100%); }
-	
-	header nav > ul { text-align: center; }
-	header nav > ul > li { display: inline-block; padding: 0 2.604166vw; text-align: left; vertical-align: top; }
-	header nav > ul > li > button.btn_sub { display: inline-block; padding: 0.1em 0; font-family: "PlayfairDisplay-Medium";
-	font-size: 1.25vw; }
-	header nav > ul > li:hover > button.btn_sub { margin-bottom: -1px; border-bottom: 1px solid #222; color: #000; }
-	header nav > ul > li > ul { padding: 0.875em 0;}
-	header nav > ul > li > ul > li > a { display: block; padding: 0.875em 0; color: #444; font-family: "PlayfairDisplay-Medium";
-	font-size: 0.83vw; }
-	header nav > ul > li > ul > li > a:hover { color: #000; font-weight: bold; }
+  header div.utility div.lang_wrap {
+    display: inline-block;
+    position: relative;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.select_lang {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+  }
+  header div.utility div.lang_wrap > div.select_lang > button.btn_expand {
+    width: 14px;
+    height: 8px;
+    margin-left: 10px;
+    background: url("../images/img_common_btn_country.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+  header div.utility div.lang_wrap > div.option_wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 0 10px;
+    border: 1px solid #222;
+    background: #ede6d6;
+    transform: translateX(-50%);
+  }
 
-	header div.utility { position: absolute; right: 130px; top: 32px; }
-	header div.utility::before { content:""; display: block; position: absolute; left: 0; bottom: -30px; width: 300%; height: 2px; background: #222; }
+  header div.utility div.lang_wrap[class~="active"] > div.option_wrap {
+    display: block;
+  }
+  header div.utility div.lang_wrap > div.option_wrap li {
+    border-bottom: 1px solid #222;
+    text-align: center;
+  }
+  header div.utility div.lang_wrap > div.option_wrap li:last-child {
+    border-bottom: none;
+  }
+  header div.utility div.lang_wrap > div.option_wrap button {
+    padding: 5px 0;
+    color: #222;
+  }
 
-	header div.utility div.lang_wrap { display: inline-block; position: relative; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility div.lang_wrap > div.select_lang { display: inline-block; height: 36px; line-height: 36px; }
-	header div.utility div.lang_wrap > div.select_lang > button.btn_expand { width: 14px; height: 8px; margin-left: 10px; background: url("../images/img_common_btn_country.png") no-repeat; background-size: 100%; 
-	vertical-align: middle; }
-	header div.utility div.lang_wrap > div.option_wrap { display: none; position: absolute;
-	top: 100%; left: 50%; padding: 0 10px; border: 1px solid #222; background: #ede6d6; transform: translateX(-50%);}
+  header div.utility .util_btns {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    font-family: "OpenSans-Regular";
+    vertical-align: middle;
+  }
+  header div.utility .btn_login {
+    background: url("../images/img_common_btn_log.png") no-repeat;
+    background-size: cover;
+  }
+  header div.utility .btn_cart {
+    background: url("../images/img_common_btn_cart.png") no-repeat;
+    background-size: cover;
+  }
 
-	header div.utility div.lang_wrap[class ~= "active"] > div.option_wrap { display: block; }
-	header div.utility div.lang_wrap > div.option_wrap li { border-bottom: 1px solid #222; text-align: center;}
-	header div.utility div.lang_wrap > div.option_wrap li:last-child { border-bottom: none; }
-	header div.utility div.lang_wrap > div.option_wrap button { padding: 5px 0; color: #222; }
+  footer {
+    padding: 24px 0;
+    background: #ede6d6;
+  }
+  footer div.logo_wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 158px;
+    height: 60px;
+  }
+  footer div.logo_wrap > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
+  footer div.info_wraps {
+    float: left;
+    width: 33.3333%;
+  }
+  footer div.info_wraps > p.title {
+    position: relative;
+    font-size: 1.125em;
+    padding: 0.4em 0;
+  }
+  footer div.info_wraps[class~="left_bdr"] > p.title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 100vw;
+    height: 1px;
+    background: #222;
+  }
+  footer div.info_wraps[class~="center_bdr"] > p.title {
+    border-bottom: 1px solid #222;
+  }
+  footer div.info_wraps[class~="right_bdr"] > p.title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100vw;
+    height: 1px;
+    background: #222;
+  }
 
-	header div.utility .util_btns { display: inline-block; width: 36px; height: 36px; margin-left: 20px; font-family: "OpenSans-Regular"; vertical-align: middle; }
-	header div.utility .btn_login { background: url("../images/img_common_btn_log.png") no-repeat; background-size: cover; }
-	header div.utility .btn_cart  { background: url("../images/img_common_btn_cart.png") no-repeat; background-size: cover; }
+  footer div.info_wraps > ul {
+    padding: 0.5em 0;
+  }
+  footer div.info_wraps > ul > li {
+    line-height: 2;
+  }
+  footer div.info_wraps > ul > li > span {
+    display: block;
+  }
 
+  footer div.info_wraps > ul > li > form.form_mail {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.1em 0.4em 0.3em 0.4em;
+    background: #fff;
+    line-height: 2;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="email"] {
+    width: 190px;
+    margin-right: 0.5em;
+    border: none;
+    font-size: 1em;
+    line-height: 1.8;
+    vertical-align: middle;
+    outline: none;
+  }
+  footer div.info_wraps > ul > li > form.form_mail input[type="submit"] {
+    padding: 0.4em 1em 0.3em 1em;
+    border: none;
+    background: #bbb;
+    color: #222;
+    vertical-align: middle;
+  }
 
-
-
-	footer { padding: 24px 0; background: #ede6d6; }
-	footer div.logo_wrap { position: absolute; left:0; bottom: 0; width: 158px; height: 60px; }
-	footer div.logo_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; }
-
-	footer div.info_wraps { float: left; width: 33.3333%; }
-	footer div.info_wraps > p.title { position: relative; font-size: 1.125em; padding: 0.4em 0; }
-	footer div.info_wraps[class ~= "left_bdr"] > p.title::after { content:""; display: block; 
-	position: absolute; right: 0; bottom: -1px; width: 100vw; height: 1px; background: #222; }
-	footer div.info_wraps[class ~= "center_bdr"] > p.title { border-bottom: 1px solid #222; }
-	footer div.info_wraps[class ~= "right_bdr"] > p.title::after { content:""; display: block; 
-	position: absolute; left: 0; bottom: -1px; width: 100vw; height: 1px; background: #222; }
-
-
-
-	footer div.info_wraps > ul { padding: 0.5em 0; }
-	footer div.info_wraps > ul > li { line-height: 2;}
-	footer div.info_wraps > ul > li > span { display: block; }
-	
-	footer div.info_wraps > ul > li > form.form_mail { display: inline-block; margin-top: 0.5em; padding: 0.1em 0.4em 0.3em 0.4em; 
-	background: #fff; line-height: 2; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "email"] { width: 190px; margin-right: 0.5em; border: none; font-size: 1em; line-height: 1.8; vertical-align: middle; outline: none; }
-	footer div.info_wraps > ul > li > form.form_mail input[type = "submit"] { padding: 0.4em 1em 0.3em 1em; border: none; background: #bbb; color: #222; vertical-align: middle; }
-
-	footer p.copy { position: relative; clear: both; padding-top: 90px; text-align: right; }
-	footer p.copy::before { content:""; display: block; position: absolute; left: 50%; top: 0; width: 150vw; height: 1px; background: #222; transform: translateX(-50%); }
-
-
-
+  footer p.copy {
+    position: relative;
+    clear: both;
+    padding-top: 90px;
+    text-align: right;
+  }
+  footer p.copy::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 150vw;
+    height: 1px;
+    background: #222;
+    transform: translateX(-50%);
+  }
 }
 
-/* ===========desktop(end)============== */
+/* DESKTOP END */

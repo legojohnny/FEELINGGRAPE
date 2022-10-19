@@ -1,14 +1,7 @@
-/*++++++++++++++++ Media Query +++++++++++++++++++*/
-/* index.html */
-
 @charset "utf-8";
 
-/* ====== mobile(start) =======*/
+/* MOBILE START */
 @media screen and (max-width: 767px) {
-  .pagination > button.pages {
-    width: 50px;
-  }
-
   /* +++ section.visual +++*/
   section.visual {
     overflow: hidden;
@@ -21,27 +14,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
-    transition: transform 0.3s;
-  }
-
-  section.visual div.prev {
-    opacity: 1;
-    z-index: 5;
-    transform: translateX(-100%);
-  }
-  section.visual div.cur {
-    opacity: 1;
-    z-index: 10;
-  }
-  section.visual div.next {
-    opacity: 1;
-    z-index: 4;
-    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
   }
 
   section.visual div.slides img {
@@ -55,9 +31,6 @@
     font-family: "Cinzel-Medium";
     font-size: 7.5vw;
     line-height: 1.2;
-    animation-name: fade_in_up;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
   }
 
   section.visual div.slides:nth-of-type(1) p.title {
@@ -81,21 +54,10 @@
   section.visual div.pagination {
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: 30px;
     z-index: 20;
     width: 100%;
     text-align: center;
-  }
-
-  @keyframes fade_in_up {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0px);
-      opacity: 1;
-    }
   }
 
   /* +++ section.month +++*/
@@ -305,12 +267,13 @@
   }
   section.collection div.rel {
     position: relative;
+    display: flex;
     width: 100%;
     border-bottom: 1px solid #fff;
   } /* 바: 25% 6px; 하단삼각형: span::after; top만 주고 left right를 transparent로 줌. */
   section.collection div.tabs_wrap button {
     display: inline-block;
-    width: 24%;
+    width: 25%;
     padding: 0.5em 0.2em;
   }
   section.collection div.tabs_wrap button > span {
@@ -409,7 +372,7 @@
 
   /* +++ section.brand +++*/
   section.brand {
-    height: 88vh;
+    height: 90vh;
   }
 
   section.brand div.img_wrap {
@@ -583,24 +546,10 @@
     margin-top: 20px;
   }
 }
-/* ====== mobile(end) =======*/
+/* MOBILE END */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!! feelingrape       !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-/* ====== tablet(start) =======*/
+/* TABLET START */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .pagination > button.pages {
-    width: 90px;
-  }
-
   /* +++ section.visual +++*/
   section.visual {
     overflow: hidden;
@@ -613,27 +562,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
-    transition: transform 0.3s;
-  }
-
-  section.visual div.prev {
-    opacity: 1;
-    z-index: 5;
-    transform: translateX(-100%);
-  }
-  section.visual div.cur {
-    opacity: 1;
-    z-index: 10;
-  }
-  section.visual div.next {
-    opacity: 1;
-    z-index: 4;
-    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
   }
 
   section.visual div.slides img {
@@ -647,9 +579,6 @@
     font-family: "Cinzel-Medium";
     font-size: 4.6875vw;
     line-height: 1.2;
-    animation-name: fade_in_up;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
   }
 
   section.visual div.slides:nth-of-type(1) p.title {
@@ -673,21 +602,10 @@
   section.visual div.pagination {
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: 30px;
     z-index: 20;
     width: 100%;
     text-align: center;
-  }
-
-  @keyframes fade_in_up {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0px);
-      opacity: 1;
-    }
   }
 
   /* +++ section.month (내용이 꽉 채워지니까 h2과 title_h2_pre만 패딩 가져갈 예정)+++*/
@@ -881,12 +799,13 @@
   }
   section.collection div.rel {
     position: relative;
+    display: flex;
     width: 100%;
     border-bottom: 1px solid #fff;
   } /* 바: 25% 6px; 하단삼각형: span::after; top만 주고 left right를 transparent로 줌. */
   section.collection div.tabs_wrap button {
     display: inline-block;
-    width: 24%;
+    width: 25%;
     padding: 1.2em 0.6em;
   }
   section.collection div.tabs_wrap button > span {
@@ -1161,26 +1080,11 @@
     margin-top: 30px;
   }
 }
-/* ====== tablet(end) =======*/
+/* TABLET END */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!! feelingrape       !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-/* ====== desktop(start) =======*/
+/* DESKTOP START */
 
 @media screen and (min-width: 1025px) {
-  .pagination > button.pages {
-    width: 90px;
-  }
-
   /* +++ section.visual +++*/
   section.visual {
     overflow: hidden;
@@ -1193,27 +1097,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
-    transition: transform 0.3s;
-  }
-
-  section.visual div.prev {
-    opacity: 1;
-    z-index: 5;
-    transform: translateX(-100%);
-  }
-  section.visual div.cur {
-    opacity: 1;
-    z-index: 10;
-  }
-  section.visual div.next {
-    opacity: 1;
-    z-index: 4;
-    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
   }
 
   section.visual div.slides img {
@@ -1227,9 +1114,6 @@
     font-family: "Cinzel-Medium";
     font-size: 2.604166vw;
     line-height: 1.2;
-    animation-name: fade_in_up;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
   }
 
   section.visual div.slides:nth-of-type(1) p.title {
@@ -1252,21 +1136,10 @@
   section.visual div.pagination {
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: 30px;
     z-index: 20;
     width: 100%;
     text-align: center;
-  }
-
-  @keyframes fade_in_up {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0px);
-      opacity: 1;
-    }
   }
 
   /* +++ section.month +++*/
@@ -1690,4 +1563,4 @@
     margin-top: 30px;
   }
 }
-/* ====== desktop(end) =======*/
+/* DESKTOP END */

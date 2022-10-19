@@ -3,44 +3,25 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>FeelingGrape</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="images/favicon.ico">
+	<!-- css -->
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/common.css" type="text/css">
 	<link rel="stylesheet" href="css/index.css" type="text/css">
-	<style type="text/css">
-
-
-	</style>
-	<!-- [if lt IE9]
-		<script src="js/html5shiv.js"></script>
-	<![endif]-->
+	<!-- javascript & jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/index.js"></script>
-
-	<script type="text/javascript">
-		window.onload = function () {
-
-			var elm_header = document.querySelector('header');
-			var btn_menu = document.querySelector('.btn_menu');
-
-			btn_menu.addEventListener('click', function () {
-				elm_header.classList.toggle('on');
-			});
-
-		}
-
-	</script>
-
+	<!-- 새로운 HTML5 섹셔닝 요소를 이전 버전의 IE6~9, Safari 4.x(iPhone 3.x)와 Firefox 3.x 에서도 작동하도록 해주는 라이브러리 -->
+	<!-- [if lt IE9]
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<title>FeelingGrape</title>
 </head>
 
 <body>
-
-
 	<header>
 		<h1><a href="index.html"><span class="blind">FeelingGrape Logo</span></a></h1>
 		<button class="btn_menu"><span class="blind">menu</span></button>
@@ -48,18 +29,13 @@
 		<nav>
 			<div class="utility">
 				<div class="lang_wrap">
-					<!--랭랩은 높이값을 옵션에 포함 안시켜서 줘야함-->
 					<div class="select_lang"><span class="select_value">English</span><button class="btn_expand"><span
 								class="blind">country change</span></button>
 					</div>
 					<div class="option_wrap">
 						<ul class="clearfix">
 							<li><button><span>English</span></button></li>
-							<!--
-							-->
 							<li><button><span>日本語</span></button></li>
-							<!--
-							-->
 							<li><button><span>Français</span></button></li>
 						</ul>
 					</div>
@@ -76,8 +52,6 @@
 						<li><a href="#">WINE TOOLS</a></li>
 					</ul>
 				</li>
-				<!--
-				-->
 				<li>
 					<button class="btn_sub"><span>PROMOTION</span></button>
 					<ul>
@@ -85,8 +59,6 @@
 						<li><a href="#">WINERY TOUR</a></li>
 					</ul>
 				</li>
-				<!--
-			-->
 				<li>
 					<button class="btn_sub"><span>MAGAZINE</span></button>
 					<ul>
@@ -95,12 +67,10 @@
 						<li><a href="#">WINE DICTIONARY</a></li>
 					</ul>
 				</li>
-				<!--
-			-->
 				<li>
 					<button class="btn_sub"><span>INFORMATION</span></button>
 					<ul>
-						<li><a href="sub/notice.html" style="font-weight: bold">NOTICE</a></li>
+						<li><a href="sub/notice.html" style="color: red; font-weight: bold;">NOTICE</a></li>
 						<li><a href="#">CUSTOMER SERVICE</a></li>
 						<li><a href="#">BRAND STORY</a></li>
 						<li><a href="#">OFFLINE STORE</a></li>
@@ -111,10 +81,9 @@
 	</header>
 
 
-
 	<section class="visual">
 		<h2 class="blind">visual section</h2>
-		<div class="slides cur">
+		<div class="slides">
 			<div class="rel">
 				<picture>
 					<source srcset="images/img_index_visual_01_M.jpg" media="(max-width: 767px)">
@@ -127,7 +96,7 @@
 			</div>
 		</div>
 		</div>
-		<div class="slides next">
+		<div class="slides">
 			<div class="rel">
 				<picture>
 					<source srcset="images/img_index_visual_02_M.jpg" media="(max-width: 767px)">
@@ -139,7 +108,7 @@
 			</div>
 			<p class="title">QUALITY WINES FOR<br>EVERYONE TO ENJOY</p>
 		</div>
-		<div class="slides pre">
+		<div class="slides">
 			<div class="rel">
 				<picture>
 					<source srcset="images/img_index_visual_03_M.jpg" media="(max-width: 767px)">
@@ -152,16 +121,14 @@
 			<p class="title">HOME IS WHERE<br>THE WINE IS</p>
 		</div>
 		<div class="pagination">
-			<button class="pages active"><span><span class="blind">slides01</span></span></button>
-			<!--
-		--><button class="pages"><span><span class="blind">slides02</span></span></button>
-			<!--
-		--><button class="pages"><span><span class="blind">slides03</span></span></button>
+			<button class="pages active">
+				<span class="blind">slides01</span></button>
+			<button class="pages">
+				<span class="blind">slides02</span></button>
+			<button class="pages">
+				<span class="blind">slides03</span></button>
 		</div>
 	</section>
-
-
-
 
 
 	<section class="month">
@@ -219,32 +186,28 @@
 				</div>
 			</div>
 			<div class="pagination">
-				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
-				<!--
-		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+				<button class="dir_btns prev" title="prev button">
+					<span class="blind">PREV</span>
+				</button>
+				<button class="dir_btns next" title="next button">
+					<span class="blind">NEXT</span>
+				</button>
 			</div>
 		</div>
 	</section>
 
 
-
-
-	<section class="collection">
+	<section class="collection" id="collectionTab">
 		<div class="inner_wrap">
 			<p class="title_h2_pre">Our Wines</p>
 			<h2>SHOP BY<br>COLLECTION</h2>
 			<div class="content_wrap">
 				<div class="tabs_wrap">
-					<!---묶어서 상단으로 보내는 역할만 함.-->
 					<div class="rel">
-						<!---border-bottom으로 하단의 선 만들어주는 역할, 바(absolute)가 움직이도록 relative 역할도 함.-->
 						<button><span>RED WINE</span></button>
-						<!-- 바깥쪽 넓이를 button이 만들고(25%), 안쪽의 모양을 span(넓이는 button과 동일 (25%))이 만듦.
-					--><button><span>ROSE WINE</span></button>
-						<!--inline-block 시 주석공백처리(float해도 되는데 div아니고 button 4개니까 굳이 float할 필요 없음)
-					--><button><span>WHITE WINE</span></button>
-						<!--
-					--><button><span>CHAMPAGNE</span></button>
+						<button><span>ROSE WINE</span></button>
+						<button><span>WHITE WINE</span></button>
+						<button><span>CHAMPAGNE</span></button>
 						<span class="bar"><span class="blind">bottom bar</span></span>
 					</div>
 				</div>
@@ -311,7 +274,6 @@
 	</section>
 
 
-
 	<section class="slogan">
 		<h2 class="blind">slogan</h2>
 		<ul class="clearfix">
@@ -353,7 +315,9 @@
 						late Baron Edmond of France came together to establish FeelingGrape with fulfilled a shared
 						vision. A dream to create iconic Korea wines of exceptional quality, sealed with a promise to
 						uphold an unwavering dedication to precision, and perfection.</p>
-					<a class="btn_common _M _BK" href="story.html"><span>Discover Our Story</span></a>
+					<a class="btn_common _M _BK" href="story.html">
+						<span>Discover Our Story</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -408,14 +372,15 @@
 				</ul>
 			</div>
 			<div class="pagination">
-				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
-				<!--
-			--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+				<button class="dir_btns prev" title="prev button">
+					<span class="blind">PREV</span>
+				</button>
+				<button class="dir_btns next" title="next button">
+					<span class="blind">NEXT</span>
+				</button>
 			</div>
 		</div>
 	</section>
-
-
 
 
 	<section class="news">
@@ -440,18 +405,15 @@
 				</ul>
 			</div>
 			<div class="pagination">
-				<button class="dir_btns prev" title="prev button"><span class="blind">PREV</span></button>
-				<!--
-		--><button class="dir_btns next" title="next button"><span class="blind">NEXT</span></button>
+				<button class="dir_btns prev" title="prev button">
+					<span class="blind">PREV</span>
+				</button>
+				<button class="dir_btns next" title="next button">
+					<span class="blind">NEXT</span>
+				</button>
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-
 
 
 	<footer>
@@ -489,3 +451,4 @@
 			<p class="copy"><strong>ⓒ2021 FeelingGrape Corporate</strong></p>
 		</div>
 	</footer>
+</body>

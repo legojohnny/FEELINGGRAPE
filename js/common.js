@@ -1,154 +1,76 @@
 $(document).ready(function () {
-  var isMobile = false; //initiate as false
+  // 네이게이션
+  // 네비게이션 메뉴버튼 열고 닫기 디자인
+  var elm_header = document.querySelector("header");
+  var btn_menu = document.querySelector(".btn_menu");
 
-  // device detection
-  if (
-    /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(
-      navigator.userAgent
-    ) ||
-    /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
-      navigator.userAgent.substr(0, 4)
-    )
-  ) {
-    isMobile = true;
-  }
-
-  const $slides = $(".visual .slides");
-  const $pn_btns = $(".visual .pagination button.pages");
-  const $btn_prev = $(".visual buton.prev");
-  const $btn_next = $(".visual buton.next");
-
-  let cnt = 0; //
-  let si_01 = 0; // interval
-
-  (function init() {
-    $slides
-      .removeClass("cur prev next")
-      .css("transition", "none")
-      .css("opacity", "1")
-      .fadeOut(0);
-    $slides.first().css("opacity", "1").fadeIn(0);
-  })();
-
-  $pn_btns.on("click", function () {
-    var cur_num = $pn_btns.index(this);
-    if (cur_num == cnt) return;
-    cnt = cur_num;
-    fade_img(cnt);
-    pagination_change(cnt);
+  btn_menu.addEventListener("click", function () {
+    if (!elm_header.classList.contains("on")) {
+      elm_header.classList.add("on");
+    } else {
+      elm_header.classList.remove("on");
+      langList.classList.remove("active");
+      $(".btn_sub").removeClass("active");
+    }
   });
 
-  function count_plus() {
-    cnt = cnt == $slides.length - 1 ? 0 : cnt + 1;
-    fade_img(cnt);
-    slide_img(cnt, "transform 0.5s");
-    pagination_change(cnt);
-    if (cnt == $slides.length - 1) cnt = 0;
-    else {
-      cnt++;
-    }
-  }
-
-  function count_minus() {
-    cnt = cnt == 0 ? $slides.length - 1 : cnt - 1;
-    fade_img(cnt);
-    slide_img(cnt, "transform 0.5s");
-    pagination_change(cnt);
-    if (cnt == 0) cnt = $slides.length - 1;
-    else {
-      cnt--;
-    }
-  }
-
-  function fade_img(num) {
-    stop_si();
-    $slides.fadeOut(500);
-    $slides.eq(num).fadeIn(500, function () {
-      start_si();
+  // 네비게이션 반응형 디자인
+  let mobile = window.matchMedia("(max-width: 767px)");
+  if (mobile.matches) {
+    $(".btn_sub").click(function (e) {
+      $(".btn_sub").removeClass("active");
+      $(e.target).parent().addClass("active");
     });
   }
 
-  function slide_img(num, transition_val) {
-    stop_si();
-    var next_num = num == $slides.length - 1 ? 0 : num + 1;
-    var prev_num = num == 0 ? $slides.length - 1 : num - 1;
-    $slides.removeClass("cur prev next").css("transition", "none");
-    if ($slides.length == 2) {
-      $slides.eq(num).addClass("cur").css("transition", transition_val);
-      if (num == 0) {
-        $slides.eq(next_num).addClass("next").css("transition", transition_val);
-      } else if (num == 1) {
-        $slides.eq(prev_num).addClass("prev").css("transition", transition_val);
-      }
-    } else if ($slides.length >= 3) {
-      $slides.eq(num).addClass("cur").css("transition", transition_val);
-      $slides.eq(prev_num).addClass("prev").css("transition", transition_val);
-      $slides.eq(next_num).addClass("next").css("transition", transition_val);
-    }
-    start_si();
-  }
+  // 언어 버튼 열고 닫기 디자인
+  let langBtn = document.querySelector(".btn_expand");
+  let langList = document.querySelector(".lang_wrap");
+  langBtn.addEventListener("click", function () {
+    langList.classList.toggle("active");
+  });
 
-  function pagination_change(num) {
-    $pn_btns.removeClass("active");
-    $pn_btns.eq(num).addClass("active");
-  }
+  // VISUAL
+  // 슬라이드 디자인
+  // const slides = $(".visual .slides");
+  const pn_btns = $(".visual .pagination button.pages");
+  const btn_prev = $(".visual buton.prev");
+  const btn_next = $(".visual buton.next");
 
-  function start_si() {
-    if (si_01 != 0) {
-      clearInterval(si_01);
-    }
-    si_01 = setInterval(count_plus, 3000);
-  }
-
-  function stop_si() {
-    if (si_01 != 0) {
-      clearInterval(si_01);
-    }
-    si_01 = 0;
-  }
-
-  start_si();
-
-  if (!isMobile) {
-  } else {
-    var $tabs_btns = $(".collection .tabs_wrap button");
-    var $lists = $(".collection .change_wraps li");
-    var $move_bar = $(".collection .tabs_wrap span.bar");
-    var cnt_num = 0;
-
-    (function lists_init() {
-      $lists.fadeOut(0);
-      $lists.first().fadeIn(0);
-    })();
-
-    $tabs_btns.on("click", function () {
-      var cur_num = $(this).index();
-      if (cur_num == cnt_num) return;
-      cnt_num = cur_num;
-      lists_change(cnt_num);
-      pagination_change(cnt_num);
-    });
-
-    function lists_change(num) {
-      $lists.fadeOut(500);
-      $lists.eq(num).fadeIn(500);
-    }
-
-    function tabs_btns_change(num) {
-      $tabs_btns.removeClass("active");
-      $tabs_btns.eq(num).addClass("active");
-      $move_bar.animate(
-        { left: $tab_btns.eq(num).position().left + "px" },
-        200
-      );
-    }
-
-    if (screen.width >= 768) {
+  let slideCount = 0;
+  // setInterval 로 3초마다 화면 바뀌게 설정
+  let interval = setInterval(slides, 3000);
+  let visual = $(".visual .slides");
+  // 슬라이드 인덱스 값에 따라서 opacity 조절로 화면 전환
+  function slides() {
+    if (slideCount < 3) {
+      visual.css("opacity", 0);
+      visual.eq(slideCount).css("opacity", 1);
+      visualpageBtn.removeClass("active");
+      visualpageBtn.eq(slideCount).addClass("active");
+      slideCount++;
     } else {
+      slideCount = 0;
+      visual.css("opacity", 0);
+      visual.eq(0).css("opacity", 1);
+      visualpageBtn.removeClass("active");
+      visualpageBtn.eq(0).addClass("active");
+      slideCount++;
     }
   }
+  // pagintion bar 전환
+  let visualpageBtn = $(".pages");
 
-  // MONTH prev next 버튼 기능 구현
+  visualpageBtn.on("click", function (e) {
+    let curBtn = $(e.target).index();
+    visualpageBtn.removeClass("active");
+    $(e.target).addClass("active");
+    visual.css("opacity", 0);
+    visual.eq(curBtn).css("opacity", 1);
+  });
+
+  // MONTH
+  // MONTH prev next 버튼 디자인
   let infoCount = $(".month .info").length;
   let info = $(".month .info");
   let img = $(".month ul");
@@ -195,9 +117,83 @@ $(document).ready(function () {
     }
   });
 
-  // TOOLS prev next 버튼 기능 구현
+  // COLLECTION
+  // 탭버튼 반응형 디자인
+  var tabs_btns = $(".collection .tabs_wrap button");
+  var lists = $(".collection .change_wraps li");
+  var move_bar = $(".collection .tabs_wrap span.bar");
+  var cnt_num = 0;
+
+  let tabletMobile = window.matchMedia("(max-width: 1024px)");
+  if (tabletMobile) {
+    // 탭 버튼 클릭시
+    tabs_btns.on("click", function () {
+      // 탭 버튼 인덱스 번호를 받아서 해당 인덱스 번호를 리스트와 탭에 전달
+      var cur_num = $(this).index();
+      if (cur_num == cnt_num) return;
+      cnt_num = cur_num;
+      lists_change(cnt_num);
+      tabs_btns_change(cnt_num);
+    });
+    // 리스트 전체 fadeOut 하고, 받은 인덱스 번호 리스트만 fadeIn처리
+    function lists_change(num) {
+      lists.fadeOut(500);
+      lists.eq(num).fadeIn(500);
+    }
+    // 탭 모든 버튼에서 active 클래스 제거하고, 받은 인덱스 번호 탭 버튼에만 active 클래스 추가
+    function tabs_btns_change(num) {
+      tabs_btns.removeClass("active");
+      tabs_btns.eq(num).addClass("active");
+      move_bar.animate({ left: tabs_btns.eq(num).position().left + "px" }, 200);
+    }
+  }
+
+  // 데스크탑 사이즈 확인
+  let desktop = window.matchMedia("(min-width: 1025px)");
+  // 데스크탑 사이즈 에서 변화 발생할 때 체크
+  desktop.addEventListener("change", function () {
+    // 만약 태블릿, 모바일 사이즈라면
+    if (desktop.matches) {
+      // 모든 리스트 보이게 처리
+      lists.css("display", "block");
+    } else {
+      // 태블릿, 모바일 사이즈
+      lists.css("display", "none");
+      // 일단, 기본 화면 설정하고
+      (function lists_init() {
+        lists.fadeOut(0).first().fadeIn(0);
+        tabs_btns.removeClass("active").eq(0).addClass("active");
+        move_bar.animate({ left: tabs_btns.eq(0).position().left + "px" }, 200);
+      })();
+      // 탭 버튼 클릭시
+      tabs_btns.on("click", function () {
+        // 탭 버튼 인덱스 번호를 받아서 해당 인덱스 번호를 리스트와 탭에 전달
+        var cur_num = $(this).index();
+        if (cur_num == cnt_num) return;
+        cnt_num = cur_num;
+        lists_change(cnt_num);
+        tabs_btns_change(cnt_num);
+      });
+      // 리스트 전체 fadeOut 하고, 받은 인덱스 번호 리스트만 fadeIn처리
+      function lists_change(num) {
+        lists.fadeOut(500);
+        lists.eq(num).fadeIn(500);
+      }
+      // 탭 모든 버튼에서 active 클래스 제거하고, 받은 인덱스 번호 탭 버튼에만 active 클래스 추가
+      function tabs_btns_change(num) {
+        tabs_btns.removeClass("active");
+        tabs_btns.eq(num).addClass("active");
+        move_bar.animate(
+          { left: tabs_btns.eq(num).position().left + "px" },
+          200
+        );
+      }
+    }
+  });
+
+  // TOOLS
+  // TOOLS prev next 버튼 디자인
   let li = $(".tools ul");
-  let liCount = $(".tools li").length;
   let liNum = 1;
 
   // 다음 버튼 클릭 구현
@@ -222,9 +218,9 @@ $(document).ready(function () {
     }
   });
 
+  // NEWS
   // NEWS prev next 버튼 기능 구현
   let news = $(".news ul");
-  let newsCount = $(".news li").length;
   let newsNum = 1;
 
   // 다음 버튼 클릭 구현
@@ -248,16 +244,5 @@ $(document).ready(function () {
       newsNum = 3;
       news.css("transform", "translateX(-33.3332%)");
     }
-  });
-
-  // tabs 바 이동 구현
-  let button = $(".tabs_wrap button");
-
-  button.click(function (e) {
-    console.log($(e.target).offset());
-    let move = $(e.target).offset().left;
-    let barMove = move - 7;
-    $(".bar").offset({ left: barMove });
-    console.log($(".bar").offset());
   });
 });
