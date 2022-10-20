@@ -33,21 +33,25 @@ $(document).ready(function () {
   // VISUAL
   // 슬라이드 디자인
   // const slides = $(".visual .slides");
-  const pn_btns = $(".visual .pagination button.pages");
-  const btn_prev = $(".visual buton.prev");
-  const btn_next = $(".visual buton.next");
-
   let slideCount = 0;
   // setInterval 로 3초마다 화면 바뀌게 설정
   let interval = setInterval(slides, 3000);
   let visual = $(".visual .slides");
+  let visualpageBtn = $(".pages");
   // 슬라이드 인덱스 값에 따라서 opacity 조절로 화면 전환
+  (function slide_init() {
+    visual.css("opacity", 0);
+    visual.eq(0).css("opacity", 1);
+    visualpageBtn.removeClass("active");
+    visualpageBtn.eq(0).addClass("active");
+  })();
+
   function slides() {
-    if (slideCount < 3) {
+    if (slideCount < 2) {
       visual.css("opacity", 0);
-      visual.eq(slideCount).css("opacity", 1);
+      visual.eq(slideCount + 1).css("opacity", 1);
       visualpageBtn.removeClass("active");
-      visualpageBtn.eq(slideCount).addClass("active");
+      visualpageBtn.eq(slideCount + 1).addClass("active");
       slideCount++;
     } else {
       slideCount = 0;
@@ -58,9 +62,8 @@ $(document).ready(function () {
       slideCount++;
     }
   }
-  // pagintion bar 전환
-  let visualpageBtn = $(".pages");
 
+  // pagintion bar 전환
   visualpageBtn.on("click", function (e) {
     let curBtn = $(e.target).index();
     visualpageBtn.removeClass("active");
