@@ -22,6 +22,42 @@
 </head>
 
 <body>
+
+	<aside>
+		<div class="login_bg">
+			<div class="login_modal">
+				<h4>로그인하세요</h4>
+				<form action="success.html">
+					<div class="login_info">
+						<label for="email">이메일:</label>
+						<input type="text" class="form_control" id="email" placeholder="이메일을 입력해주세요"
+							autocomplete="email">
+					</div>
+					<div class="login_info">
+						<label for="pw">비밀번호:</label>
+						<input type="password" class="form_control" id="pw" placeholder="비밀번호를 입력해주세요"
+							autocomplete="current-password">
+					</div>
+					<button type="submit" class="btn btn_submit" id="send">전송</button>
+					<button type="button" class="btn btn_close" id="close">닫기</button>
+				</form>
+			</div>
+		</div>
+		<div class="cart_bg">
+			<div class="cart_modal" id="cart_list">
+				<h4>장바구니 목록</h4>
+				<form action="purchase.html">
+					<div>
+						<!-- <p>상품명: </p><p>개수: </p> -->
+					</div>
+					<button type="submit" class="btn btn_cart btn_purchase" id="purchase">구매</button>
+					<button type="reset" class="btn btn_cart btn_reset" id="reset">목록비우기</button>
+					<button type="button" class="btn btn_cart btn_close" id="close_cart">닫기</button>
+				</form>
+			</div>
+		</div>
+	</aside>
+
 	<header>
 		<h1><a href="index.html"><span class="blind">FeelingGrape Logo</span></a></h1>
 		<button class="btn_menu"><span class="blind">menu</span></button>
@@ -40,7 +76,7 @@
 						</ul>
 					</div>
 				</div>
-				<a id="btn_login" class="util_btns btn_login" href="#"><span class="blind">login</span></a>
+				<button id="btn_login" class="util_btns btn_login" href="#"><span class="blind">login</span></button>
 				<a id="btn_cart" class="util_btns btn_cart" href="#"><span class="blind">cart</span></a>
 			</div>
 			<ul class="clearfix">
@@ -146,7 +182,7 @@
 							and easy to drink</p>
 						<p class="flavour">Flavour : Rich and smooth, with juicy red berries and hints of vanilla and
 							spice</p>
-						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+						<button class="btn_common btn_add _M _BK"><span>Add to Cart</span></button>
 					</div>
 					<div class="info">
 						<p class="title">Feeling Zest Sangria</p>
@@ -157,7 +193,7 @@
 							premium red wine with a splash of sweet citrus for a party-starter in a bottle</p>
 						<p class="flavour">Flavour : Sweet and refreshing, bursting with citrus flavors including
 							mandarin & orange with a hint of red fruits</p>
-						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+						<button class="btn_common btn_add _M _BK"><span>Add to Cart</span></button>
 					</div>
 					<div class="info">
 						<p class="title">Feeling Cellars Chardonnay</p>
@@ -168,7 +204,7 @@
 							vibrant, flavorsome, fresh and easy to drink</p>
 						<p class="flavour">Flavour : Rich and vibrant, with fresh peach and melon flavors and a hint of
 							vanilla</p>
-						<button class="btn_common _M _BK"><span>Add to Cart</span></button>
+						<button class="btn_common btn_add _M _BK"><span>Add to Cart</span></button>
 					</div>
 				</div>
 				<div class="img_wrap view_mask">
@@ -337,31 +373,31 @@
 						<img src="images/img_index_tool_01.jpg" alt="">
 						<p class="title">Alpha Wine Decanter</p>
 						<p class="price">$150</p>
-						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+						<button class="btn_common btn_add _S _BK"><span>Add to cart</span></button>
 					</li>
 					<li>
 						<img src="images/img_index_tool_02.jpg" alt="">
 						<p class="title">Anna Silver Opener</p>
 						<p class="price">$170</p>
-						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+						<button class="btn_common btn_add _S _BK"><span>Add to cart</span></button>
 					</li>
 					<li>
 						<img src="images/img_index_tool_03.jpg" alt="">
 						<p class="title">Classic Ice Bucket</p>
 						<p class="price">$210</p>
-						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+						<button class="btn_common btn_add _S _BK"><span>Add to cart</span></button>
 					</li>
 					<li>
 						<img src="images/img_index_tool_04.jpg" alt="">
 						<p class="title">Bohemian Glass Coupe Set</p>
 						<p class="price">$330</p>
-						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+						<button class="btn_common btn_add _S _BK"><span>Add to cart</span></button>
 					</li>
 					<li>
 						<img src="images/img_index_tool_05.jpg" alt="">
 						<p class="title">Alessandro Silver Opener</p>
 						<p class="price">$175</p>
-						<button class="btn_common _S _BK"><span>Add to cart</span></button>
+						<button class="btn_common btn_add _S _BK"><span>Add to cart</span></button>
 					</li>
 					<li>
 						<img src="images/img_index_tool_06.jpg" alt="">
