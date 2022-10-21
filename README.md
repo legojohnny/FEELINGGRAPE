@@ -43,8 +43,9 @@
 
 ### 메인 페이지 상품 추가 버튼 클릭 시 장바구니에 담긴 목록 반영
 
+<p align="center">
     <img src="https://user-images.githubusercontent.com/99404732/197204014-8b40f88f-6ae6-4fb4-83fe-b3869c1305de.gif">
-
+</p>
 
 ### 서브 페이지 Notice 게시판 토글을 사용한 열고닫기 기능 
 
