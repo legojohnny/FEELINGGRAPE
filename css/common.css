@@ -543,7 +543,7 @@ h2::after {
   }
 
   header nav > ul {
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 100%;
     padding-left: 9vw;
   }

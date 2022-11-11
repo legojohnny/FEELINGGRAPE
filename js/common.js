@@ -14,15 +14,9 @@ $(document).ready(function () {
     }
   });
 
-  // 네비게이션 모바일 디자인
-  $(".btn_sub").click(function (e) {
-    $(".btn_sub").removeClass("active");
-    $(e.target).parent().addClass("active");
-  });
-
   // 네비게이션 모바일 반응형 디자인
   let mobile = window.matchMedia("(max-width: 767px)");
-  if (mobile.matches) {
+  if (mobile.matches == true) {
     $(".btn_sub").click(function (e) {
       $(".btn_sub").removeClass("active");
       $(e.target).parent().addClass("active");
