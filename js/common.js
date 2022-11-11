@@ -285,7 +285,7 @@ $(document).ready(function () {
 
   // 탭버튼 태블릿 반응형 디자인
   let tabletMobile = window.matchMedia("(max-width: 1024px)");
-  if (tabletMobile.matches) {
+  if (tabletMobile.matches == true) {
     // 탭 버튼 클릭시
     tabs_btns.on("click", function () {
       // 탭 버튼 인덱스 번호를 받아서 해당 인덱스 번호를 리스트와 탭에 전달
