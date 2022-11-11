@@ -288,6 +288,7 @@ $(document).ready(function () {
   var lists = $(".collection .change_wraps li");
   var move_bar = $(".collection .tabs_wrap span.bar");
   var cnt_num = 0;
+
   // 탭버튼 태블릿 반응형 디자인
   let tabletMobile = window.matchMedia("(max-width: 1024px)");
   if (tabletMobile.matches) {
