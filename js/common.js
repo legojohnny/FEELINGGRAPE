@@ -113,7 +113,34 @@ $(document).ready(function () {
   });
 
   // 장바구니에 추가 버튼 누르면 상품 정보 localStorage에 저장하기
+  // 버튼에 ::after로 추가된 추가버튼 이미지 클릭
+  $(".btn_add")
+    .after()
+    .click(function (e) {
+      e.stopPropagation();
+      var title = $(e.target).siblings("p.title").text();
+      var count = 1;
+      var arr = { name: title, num: count };
+
+      if (localStorage.getItem("cart") != null) {
+        var value = JSON.parse(localStorage.getItem("cart"));
+        var findProduct = value.find((product) => product.name == arr.name);
+        var findIndex = value.findIndex((product) => product.name == arr.name);
+
+        if (findProduct) {
+          findProduct.num = findProduct.num + 1;
+          localStorage.setItem("cart", JSON.stringify(value));
+        } else {
+          value.push(arr);
+          localStorage.setItem("cart", JSON.stringify(value));
+        }
+      } else {
+        localStorage.setItem("cart", JSON.stringify([arr]));
+      }
+    });
+  // 버튼에 span으로 기입된 장바구니추가 문구 클릭
   $(".btn_add span").click(function (e) {
+    e.stopPropagation();
     var title = $(e.target).parent().siblings("p.title").text();
     var count = 1;
     var arr = { name: title, num: count };
@@ -139,29 +166,31 @@ $(document).ready(function () {
   $(".btn_cart").click(function () {
     $(".cart_bg").addClass("show_modal");
     localStorage.getItem("cart");
-    var templets = "<p>상품명: </p><p>개수: </p>";
-    var cartInfo = 0;
+    var arr = [];
+    var cartInfo = [];
 
     if (localStorage.getItem("cart") != null) {
       cartInfo = JSON.parse(localStorage.cart);
+      console.log(cartInfo);
     }
 
-    for (let i = 0; i < cartInfo.length; i++) {
-      $(".cart_modal form div").html("");
-
-      $(".cart_modal form div").append(
-        `<div class="cart_list"><p>상품명: ${cartInfo[i].name}</p><p>개수: ${cartInfo[i].num}</p></div>`
+    $(".cart_list").html("");
+    cartInfo.forEach((a, i) => {
+      $(".cart_list").append(
+        `<div key=${i}">
+          <p>상품명: ${a.name}</p><p>개수: ${a.num}</p>
+        </div>`
       );
-    }
+    });
   });
 
   //장바구니 모달창 닫기, 장바구니 목록(localStorage) 리셋
+  $(".btn_reset").click(function () {
+    $(".cart_list").html("");
+    window.localStorage.clear();
+  });
   $(".cart_modal .btn_close").click(function () {
     $(".cart_bg").removeClass("show_modal");
-  });
-  $(".btn_reset").click(function () {
-    $(".cart_modal form div").html("");
-    window.localStorage.clear();
   });
 
   // VISUAL
